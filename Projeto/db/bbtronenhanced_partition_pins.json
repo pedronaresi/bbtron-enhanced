@@ -1,0 +1,81 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "cu_writeReg",
+					"strict" : false
+				},
+				{
+					"name" : "cu_regDest",
+					"strict" : false
+				},
+				{
+					"name" : "cu_memtoReg",
+					"strict" : false
+				},
+				{
+					"name" : "cu_Jump",
+					"strict" : false
+				},
+				{
+					"name" : "cu_inSignal",
+					"strict" : false
+				},
+				{
+					"name" : "cu_aluScr",
+					"strict" : false
+				},
+				{
+					"name" : "cu_writeEnable",
+					"strict" : false
+				},
+				{
+					"name" : "cu_readEnable",
+					"strict" : false
+				},
+				{
+					"name" : "cu_Branch",
+					"strict" : false
+				},
+				{
+					"name" : "cu_aluOp",
+					"strict" : false
+				},
+				{
+					"name" : "cu_hlt",
+					"strict" : false
+				},
+				{
+					"name" : "cu_reset",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[4]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[5]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

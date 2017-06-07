@@ -4,11 +4,12 @@ module signExtenderJ (inputB, extenderOutputB);
 
     always @ ( * ) begin //Multiplexador usado para avaliar que tipo de extensão o "signExtender" deve fazer.
     //Caso a seleção seja "01" ele completa uma entrada de 25 bits. Instrucao j.
-      extenderOutput = inputB;
-      if(inputB[11] == 1'b1) begin
-        extenderOutput = {11'h0000, inputB};
+      extenderOutputB = inputB;
+      if(inputB[25]) begin
+        extenderOutputB = {{6{1'b1}}, inputB};
         end
       else begin
-        extenderOutput = 32'b1;
-        end
+        extenderOutputB = {{6{1'b0}}, inputB};
+		  end
+	 end
 endmodule // signExtenderJ

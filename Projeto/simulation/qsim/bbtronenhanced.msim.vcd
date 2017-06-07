@@ -1,0 +1,498 @@
+$comment
+	File created using the following command:
+		vcd file bbtronenhanced.msim.vcd -direction
+$end
+$date
+	Tue Jun 06 23:43:06 2017
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module controlUnity_vlg_vec_tst $end
+$var reg 6 ! opcode [5:0] $end
+$var wire 1 " cu_Branch $end
+$var wire 1 # cu_Jump $end
+$var wire 1 $ cu_aluOp $end
+$var wire 1 % cu_aluScr $end
+$var wire 1 & cu_hlt $end
+$var wire 1 ' cu_inSignal $end
+$var wire 1 ( cu_memtoReg $end
+$var wire 1 ) cu_readEnable $end
+$var wire 1 * cu_regDest $end
+$var wire 1 + cu_reset $end
+$var wire 1 , cu_writeEnable $end
+$var wire 1 - cu_writeReg $end
+
+$scope module i1 $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var tri1 1 1 devclrn $end
+$var tri1 1 2 devpor $end
+$var tri1 1 3 devoe $end
+$var wire 1 4 cu_writeReg~output_o $end
+$var wire 1 5 cu_regDest~output_o $end
+$var wire 1 6 cu_memtoReg~output_o $end
+$var wire 1 7 cu_Jump~output_o $end
+$var wire 1 8 cu_inSignal~output_o $end
+$var wire 1 9 cu_aluScr~output_o $end
+$var wire 1 : cu_writeEnable~output_o $end
+$var wire 1 ; cu_readEnable~output_o $end
+$var wire 1 < cu_Branch~output_o $end
+$var wire 1 = cu_aluOp~output_o $end
+$var wire 1 > cu_hlt~output_o $end
+$var wire 1 ? cu_reset~output_o $end
+$var wire 1 @ opcode[5]~input_o $end
+$var wire 1 A opcode[3]~input_o $end
+$var wire 1 B opcode[1]~input_o $end
+$var wire 1 C opcode[2]~input_o $end
+$var wire 1 D opcode[0]~input_o $end
+$var wire 1 E WideOr2~0_combout $end
+$var wire 1 F opcode[4]~input_o $end
+$var wire 1 G WideOr2~1_combout $end
+$var wire 1 H WideOr0~0_combout $end
+$var wire 1 I WideOr0~1_combout $end
+$var wire 1 J WideOr0~1clkctrl_outclk $end
+$var wire 1 K cu_writeReg$latch~combout $end
+$var wire 1 L WideOr4~0_combout $end
+$var wire 1 M WideOr4~1_combout $end
+$var wire 1 N cu_regDest$latch~combout $end
+$var wire 1 O Decoder0~0_combout $end
+$var wire 1 P Decoder0~1_combout $end
+$var wire 1 Q cu_memtoReg$latch~combout $end
+$var wire 1 R WideOr6~0_combout $end
+$var wire 1 S WideOr6~1_combout $end
+$var wire 1 T cu_Jump$latch~combout $end
+$var wire 1 U Decoder0~2_combout $end
+$var wire 1 V Decoder0~3_combout $end
+$var wire 1 W cu_inSignal$latch~combout $end
+$var wire 1 X WideOr9~0_combout $end
+$var wire 1 Y WideOr9~1_combout $end
+$var wire 1 Z cu_aluScr$latch~combout $end
+$var wire 1 [ Decoder0~4_combout $end
+$var wire 1 \ cu_writeEnable$latch~combout $end
+$var wire 1 ] Decoder0~5_combout $end
+$var wire 1 ^ cu_Branch$latch~combout $end
+$var wire 1 _ WideOr14~1_combout $end
+$var wire 1 ` WideOr14~0_combout $end
+$var wire 1 a WideOr14~2_combout $end
+$var wire 1 b cu_aluOp$latch~combout $end
+$var wire 1 c WideOr15~0_combout $end
+$var wire 1 d WideOr15~1_combout $end
+$var wire 1 e cu_hlt$latch~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0"
+0#
+1$
+0%
+0&
+0'
+0(
+0)
+1*
+0+
+0,
+1-
+0.
+1/
+x0
+11
+12
+13
+14
+15
+06
+07
+08
+09
+0:
+0;
+0<
+1=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+1G
+0H
+0I
+0J
+1K
+0L
+0M
+1N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+1a
+1b
+0c
+1d
+0e
+$end
+#38500
+b1 !
+1D
+1c
+1_
+1E
+0a
+0b
+0=
+0$
+#77000
+b11 !
+b10 !
+0D
+1B
+0_
+1a
+1b
+1=
+1$
+#115500
+b11 !
+1D
+1_
+0a
+0b
+0=
+0$
+#154000
+b111 !
+b101 !
+b100 !
+0D
+0B
+1C
+0_
+1a
+1b
+1=
+1$
+#192500
+b101 !
+1D
+#231000
+b111 !
+b110 !
+0D
+1B
+1_
+0E
+0a
+0b
+0=
+0$
+#269500
+b111 !
+1D
+0_
+1a
+1b
+1=
+1$
+#308000
+b1111 !
+b1011 !
+b1001 !
+b1000 !
+0D
+0B
+0C
+1A
+0c
+1_
+0a
+0b
+0=
+0$
+#346500
+b1001 !
+1D
+1c
+1O
+1L
+1E
+1]
+1M
+0G
+1^
+0N
+0K
+04
+05
+1<
+1"
+0*
+0-
+#385000
+b1011 !
+b1010 !
+0D
+1B
+0O
+0]
+0^
+0<
+0"
+#423500
+b1011 !
+1D
+0_
+1X
+1O
+0E
+1a
+1Y
+1G
+1b
+1Z
+1K
+14
+19
+1=
+1$
+1%
+1-
+#462000
+b1111 !
+b1101 !
+b1100 !
+0D
+0B
+1C
+1_
+0O
+0a
+0b
+0=
+0$
+#500500
+b1101 !
+1D
+0_
+1O
+1a
+1b
+1=
+1$
+#539000
+b1111 !
+b1110 !
+0D
+1B
+1_
+0O
+1P
+0a
+0P
+1Q
+16
+1;
+1)
+1(
+0b
+0Q
+06
+0;
+0=
+0$
+0)
+0(
+#577500
+b1111 !
+1D
+1O
+1P
+1Q
+16
+1;
+1)
+1(
+#616000
+b11111 !
+b10111 !
+b10011 !
+b10001 !
+b10000 !
+0D
+0B
+0C
+0A
+1F
+0c
+0_
+0X
+0O
+0L
+1]
+0P
+1U
+0G
+0]
+1[
+1^
+0Q
+0K
+04
+06
+0;
+1<
+1"
+0)
+0(
+0-
+0^
+1\
+1:
+0<
+0"
+1,
+#654500
+b10001 !
+1D
+1c
+1_
+0[
+1E
+1G
+0\
+0:
+0,
+1K
+14
+1-
+#693000
+b10011 !
+b10010 !
+0D
+1B
+1`
+0_
+1a
+1b
+1=
+1$
+#731500
+b10011 !
+1D
+0`
+1_
+0a
+0b
+0=
+0$
+#770000
+b10111 !
+b10101 !
+b10100 !
+0D
+0B
+1C
+0_
+#808500
+b10101 !
+1D
+1V
+1W
+18
+1'
+#847000
+b10111 !
+b10110 !
+0D
+1B
+1_
+0V
+0E
+1R
+0G
+1S
+0W
+08
+0'
+0K
+1T
+17
+04
+0-
+1#
+#885500
+b10111 !
+1D
+0_
+#924000
+b11111 !
+b11011 !
+b11001 !
+b11000 !
+0D
+0B
+0C
+1A
+0c
+1_
+1[
+0d
+0U
+1d
+0[
+1\
+1e
+1>
+1?
+1:
+1,
+1+
+1&
+0e
+0\
+0:
+0>
+0?
+0+
+0&
+0,
+#962500
+b11001 !
+1D
+1c
+1L
+1E
+0d
+1e
+1>
+1?
+1+
+1&
+#1000000

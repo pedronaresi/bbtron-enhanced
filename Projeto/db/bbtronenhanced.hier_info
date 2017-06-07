@@ -1,0 +1,21 @@
+|controlUnity
+opcode[0] => Decoder0.IN5
+opcode[1] => Decoder0.IN4
+opcode[2] => Decoder0.IN3
+opcode[3] => Decoder0.IN2
+opcode[4] => Decoder0.IN1
+opcode[5] => Decoder0.IN0
+cu_writeReg <= cu_writeReg$latch.DB_MAX_OUTPUT_PORT_TYPE
+cu_regDest <= cu_regDest$latch.DB_MAX_OUTPUT_PORT_TYPE
+cu_memtoReg <= cu_memtoReg$latch.DB_MAX_OUTPUT_PORT_TYPE
+cu_Jump <= cu_Jump$latch.DB_MAX_OUTPUT_PORT_TYPE
+cu_inSignal <= cu_inSignal$latch.DB_MAX_OUTPUT_PORT_TYPE
+cu_aluScr <= cu_aluScr$latch.DB_MAX_OUTPUT_PORT_TYPE
+cu_writeEnable <= cu_writeEnable$latch.DB_MAX_OUTPUT_PORT_TYPE
+cu_readEnable <= cu_readEnable$latch.DB_MAX_OUTPUT_PORT_TYPE
+cu_Branch <= cu_Branch$latch.DB_MAX_OUTPUT_PORT_TYPE
+cu_aluOp <= cu_aluOp$latch.DB_MAX_OUTPUT_PORT_TYPE
+cu_hlt <= cu_hlt$latch.DB_MAX_OUTPUT_PORT_TYPE
+cu_reset <= cu_reset$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
