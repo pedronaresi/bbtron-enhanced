@@ -1,5 +1,5 @@
 Flow report for bbtronenhanced
-Tue Jun 06 23:43:04 2017
+Tue Jun 13 19:46:08 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,21 +41,21 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Jun 06 23:43:04 2017       ;
+; Flow Status                        ; Successful - Tue Jun 13 19:46:08 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; bbtronenhanced                              ;
-; Top-level Entity Name              ; controlUnity                                ;
+; Top-level Entity Name              ; dataMemory                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 31 / 6,272 ( < 1 % )                        ;
-;     Total combinational functions  ; 31 / 6,272 ( < 1 % )                        ;
-;     Dedicated logic registers      ; 0 / 6,272 ( 0 % )                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 18 / 92 ( 20 % )                            ;
+; Total logic elements               ; 64 / 6,272 ( 1 % )                          ;
+;     Total combinational functions  ; 49 / 6,272 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 63 / 6,272 ( 1 % )                          ;
+; Total registers                    ; 63                                          ;
+; Total pins                         ; 77 / 180 ( 43 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
+; Total memory bits                  ; 32,768 / 276,480 ( 12 % )                   ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
 ; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
-; Device                             ; EP4CE6E22C6                                 ;
+; Device                             ; EP4CE6F17C6                                 ;
 ; Timing Models                      ; Final                                       ;
 +------------------------------------+---------------------------------------------+
 
@@ -65,24 +65,24 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/06/2017 23:37:25 ;
+; Start date & time ; 06/13/2017 19:40:30 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; bbtronenhanced      ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                          ;
-+-------------------------------------+----------------------------------------+----------------+--------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value  ; Entity Name  ; Section Id ;
-+-------------------------------------+----------------------------------------+----------------+--------------+------------+
-; COMPILER_SIGNATURE_ID               ; 246744092476722.149680304512648        ; --             ; --           ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --             ; controlUnity ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --             ; controlUnity ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --             ; controlUnity ; Top        ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --             ; --           ; --         ;
-; TOP_LEVEL_ENTITY                    ; controlUnity                           ; bbtronenhanced ; --           ; --         ;
-+-------------------------------------+----------------------------------------+----------------+--------------+------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                         ;
++-------------------------------------+----------------------------------------+----------------+-------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value  ; Entity Name ; Section Id ;
++-------------------------------------+----------------------------------------+----------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 246744092476722.149739363003016        ; --             ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --             ; dataMemory  ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --             ; dataMemory  ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --             ; dataMemory  ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --             ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; dataMemory                             ; bbtronenhanced ; --          ; --         ;
++-------------------------------------+----------------------------------------+----------------+-------------+------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -90,15 +90,17 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 631 MB              ; 00:00:26                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 1276 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 545 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 628 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 497 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 507 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 497 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 507 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:38                           ;
+; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 638 MB              ; 00:00:27                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 1288 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 546 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 629 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 496 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 505 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 496 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 505 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 496 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 505 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:30     ; --                      ; --                  ; 00:00:43                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,6 +117,8 @@ agreement for further details.
 ; EDA Netlist Writer        ; Sergio-PC        ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer        ; Sergio-PC        ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer        ; Sergio-PC        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Sergio-PC        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Sergio-PC        ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 
@@ -125,9 +129,11 @@ quartus_map --read_settings_files=on --write_settings_files=off bbtronenhanced -
 quartus_fit --read_settings_files=off --write_settings_files=off bbtronenhanced -c bbtronenhanced
 quartus_asm --read_settings_files=off --write_settings_files=off bbtronenhanced -c bbtronenhanced
 quartus_sta bbtronenhanced -c bbtronenhanced
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off bbtronenhanced -c bbtronenhanced --vector_source=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/Waveform6.vwf --testbench_file=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim/Waveform6.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off bbtronenhanced -c bbtronenhanced --vector_source=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/Waveform13.vwf --testbench_file=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim/Waveform13.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim/ bbtronenhanced -c bbtronenhanced
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off bbtronenhanced -c bbtronenhanced --vector_source=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/Waveform6.vwf --testbench_file=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim/Waveform6.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off bbtronenhanced -c bbtronenhanced --vector_source=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/Waveform13.vwf --testbench_file=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim/Waveform13.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim/ bbtronenhanced -c bbtronenhanced
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off bbtronenhanced -c bbtronenhanced --vector_source=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/Waveform14.vwf --testbench_file=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim/Waveform14.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim/ bbtronenhanced -c bbtronenhanced
 
 

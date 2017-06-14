@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY controlUnity
+set_global_assignment -name TOP_LEVEL_ENTITY dataMemory
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:33:41  JUNE 06, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
@@ -56,8 +56,20 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
 set_global_assignment -name VERILOG_FILE muxRegDest.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
 set_global_assignment -name VERILOG_FILE controlUnity.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
+set_global_assignment -name VERILOG_FILE muxMemtoReg.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
+set_global_assignment -name VERILOG_FILE muxJump.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform8.vwf
+set_global_assignment -name VERILOG_FILE muxInSignal.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform9.vwf
+set_global_assignment -name VERILOG_FILE muxALUScr.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform10.vwf
+set_global_assignment -name VERILOG_FILE instructionMemory.v
+set_global_assignment -name VERILOG_FILE dataMemory.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform11.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform12.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
