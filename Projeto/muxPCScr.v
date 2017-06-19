@@ -9,7 +9,7 @@ module muxPCScr (extenderOutputA, outAddy, out, pcScr);
     if(pcScr)
       out = extenderOutputA;
     else
-      out = outAddy +1;
+      out = outAddy + 1;
   end
 
 endmodule // muxPCScr
