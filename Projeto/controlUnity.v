@@ -162,7 +162,7 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
     cu_inSignal = 1'b0;
     cu_aluScr = 1'b0;
     cu_writeEnable = 1'b0;
-    cu_readEnable = 1'bx0;
+    cu_readEnable = 1'bx;
     cu_Branch = 1'b0;
     cu_aluOp = 4'b0010;
     cu_hlt = 1'b0;
@@ -192,7 +192,7 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
     cu_inSignal = 1'b0;
     cu_aluScr = 1'b1;
     cu_writeEnable = 1'b0;
-    cu_readEnable = 1'bx0;
+    cu_readEnable = 1'bx;
     cu_Branch = 1'b0;
     cu_aluOp = 4'b0010;
     cu_hlt = 1'b0;

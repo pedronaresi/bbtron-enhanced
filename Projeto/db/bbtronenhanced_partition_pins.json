@@ -4,311 +4,327 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "dataRAMOutput[0]",
+					"name" : "out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[1]",
+					"name" : "out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[2]",
+					"name" : "out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[3]",
+					"name" : "out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[4]",
+					"name" : "out[4]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[5]",
+					"name" : "out[5]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[6]",
+					"name" : "out[6]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[7]",
+					"name" : "out[7]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[8]",
+					"name" : "out[8]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[9]",
+					"name" : "out[9]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[10]",
+					"name" : "out[10]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[11]",
+					"name" : "out[11]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[12]",
+					"name" : "out[12]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[13]",
+					"name" : "out[13]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[14]",
+					"name" : "out[14]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[15]",
+					"name" : "out[15]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[16]",
+					"name" : "out[16]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[17]",
+					"name" : "out[17]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[18]",
+					"name" : "out[18]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[19]",
+					"name" : "out[19]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[20]",
+					"name" : "out[20]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[21]",
+					"name" : "out[21]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[22]",
+					"name" : "out[22]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[23]",
+					"name" : "out[23]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[24]",
+					"name" : "out[24]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[25]",
+					"name" : "out[25]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[26]",
+					"name" : "out[26]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[27]",
+					"name" : "out[27]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[28]",
+					"name" : "out[28]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[29]",
+					"name" : "out[29]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[30]",
+					"name" : "out[30]",
 					"strict" : false
 				},
 				{
-					"name" : "dataRAMOutput[31]",
+					"name" : "out[31]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[0]",
+					"name" : "extenderOutputA[0]",
 					"strict" : false
 				},
 				{
-					"name" : "clock",
+					"name" : "outAddy[0]",
 					"strict" : false
 				},
 				{
-					"name" : "cu_writeEnable",
+					"name" : "pcScr",
 					"strict" : false
 				},
 				{
-					"name" : "memoryAddy[0]",
+					"name" : "extenderOutputA[1]",
 					"strict" : false
 				},
 				{
-					"name" : "memoryAddy[1]",
+					"name" : "outAddy[1]",
 					"strict" : false
 				},
 				{
-					"name" : "memoryAddy[2]",
+					"name" : "extenderOutputA[2]",
 					"strict" : false
 				},
 				{
-					"name" : "memoryAddy[3]",
+					"name" : "outAddy[2]",
 					"strict" : false
 				},
 				{
-					"name" : "memoryAddy[4]",
+					"name" : "extenderOutputA[3]",
 					"strict" : false
 				},
 				{
-					"name" : "memoryAddy[5]",
+					"name" : "outAddy[3]",
 					"strict" : false
 				},
 				{
-					"name" : "memoryAddy[6]",
+					"name" : "extenderOutputA[4]",
 					"strict" : false
 				},
 				{
-					"name" : "memoryAddy[7]",
+					"name" : "outAddy[4]",
 					"strict" : false
 				},
 				{
-					"name" : "memoryAddy[8]",
+					"name" : "extenderOutputA[5]",
 					"strict" : false
 				},
 				{
-					"name" : "memoryAddy[9]",
+					"name" : "outAddy[5]",
 					"strict" : false
 				},
 				{
-					"name" : "cu_readEnable",
+					"name" : "extenderOutputA[6]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[1]",
+					"name" : "outAddy[6]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[2]",
+					"name" : "extenderOutputA[7]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[3]",
+					"name" : "outAddy[7]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[4]",
+					"name" : "extenderOutputA[8]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[5]",
+					"name" : "outAddy[8]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[6]",
+					"name" : "extenderOutputA[9]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[7]",
+					"name" : "outAddy[9]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[8]",
+					"name" : "extenderOutputA[10]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[9]",
+					"name" : "outAddy[10]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[10]",
+					"name" : "extenderOutputA[11]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[11]",
+					"name" : "outAddy[11]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[12]",
+					"name" : "extenderOutputA[12]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[13]",
+					"name" : "outAddy[12]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[14]",
+					"name" : "extenderOutputA[13]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[15]",
+					"name" : "outAddy[13]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[16]",
+					"name" : "extenderOutputA[14]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[17]",
+					"name" : "outAddy[14]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[18]",
+					"name" : "extenderOutputA[15]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[19]",
+					"name" : "outAddy[15]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[20]",
+					"name" : "extenderOutputA[16]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[21]",
+					"name" : "extenderOutputA[17]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[22]",
+					"name" : "extenderOutputA[18]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[23]",
+					"name" : "extenderOutputA[19]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[24]",
+					"name" : "extenderOutputA[20]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[25]",
+					"name" : "extenderOutputA[21]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[26]",
+					"name" : "extenderOutputA[22]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[27]",
+					"name" : "extenderOutputA[23]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[28]",
+					"name" : "extenderOutputA[24]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[29]",
+					"name" : "extenderOutputA[25]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[30]",
+					"name" : "extenderOutputA[26]",
 					"strict" : false
 				},
 				{
-					"name" : "writeData[31]",
+					"name" : "extenderOutputA[27]",
+					"strict" : false
+				},
+				{
+					"name" : "extenderOutputA[28]",
+					"strict" : false
+				},
+				{
+					"name" : "extenderOutputA[29]",
+					"strict" : false
+				},
+				{
+					"name" : "extenderOutputA[30]",
+					"strict" : false
+				},
+				{
+					"name" : "extenderOutputA[31]",
 					"strict" : false
 				}
 			]

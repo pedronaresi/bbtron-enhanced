@@ -3,7 +3,7 @@ $comment
 		vcd file bbtronenhanced.msim.vcd -direction
 $end
 $date
-	Tue Jun 13 19:46:09 2017
+	Fri Jun 16 13:02:47 2017
 $end
 $version
 	ModelSim Version 10.5b
@@ -12,337 +12,209 @@ $timescale
 	1ps
 $end
 
-$scope module dataMemory_vlg_vec_tst $end
-$var reg 1 ! clock $end
-$var reg 1 " cu_readEnable $end
-$var reg 1 # cu_writeEnable $end
-$var reg 10 $ memoryAddy [9:0] $end
-$var reg 32 % writeData [31:0] $end
-$var wire 1 & dataRAMOutput [31] $end
-$var wire 1 ' dataRAMOutput [30] $end
-$var wire 1 ( dataRAMOutput [29] $end
-$var wire 1 ) dataRAMOutput [28] $end
-$var wire 1 * dataRAMOutput [27] $end
-$var wire 1 + dataRAMOutput [26] $end
-$var wire 1 , dataRAMOutput [25] $end
-$var wire 1 - dataRAMOutput [24] $end
-$var wire 1 . dataRAMOutput [23] $end
-$var wire 1 / dataRAMOutput [22] $end
-$var wire 1 0 dataRAMOutput [21] $end
-$var wire 1 1 dataRAMOutput [20] $end
-$var wire 1 2 dataRAMOutput [19] $end
-$var wire 1 3 dataRAMOutput [18] $end
-$var wire 1 4 dataRAMOutput [17] $end
-$var wire 1 5 dataRAMOutput [16] $end
-$var wire 1 6 dataRAMOutput [15] $end
-$var wire 1 7 dataRAMOutput [14] $end
-$var wire 1 8 dataRAMOutput [13] $end
-$var wire 1 9 dataRAMOutput [12] $end
-$var wire 1 : dataRAMOutput [11] $end
-$var wire 1 ; dataRAMOutput [10] $end
-$var wire 1 < dataRAMOutput [9] $end
-$var wire 1 = dataRAMOutput [8] $end
-$var wire 1 > dataRAMOutput [7] $end
-$var wire 1 ? dataRAMOutput [6] $end
-$var wire 1 @ dataRAMOutput [5] $end
-$var wire 1 A dataRAMOutput [4] $end
-$var wire 1 B dataRAMOutput [3] $end
-$var wire 1 C dataRAMOutput [2] $end
-$var wire 1 D dataRAMOutput [1] $end
-$var wire 1 E dataRAMOutput [0] $end
+$scope module muxPCScr_vlg_vec_tst $end
+$var reg 32 ! extenderOutputA [31:0] $end
+$var reg 16 " outAddy [15:0] $end
+$var reg 1 # pcScr $end
+$var wire 1 $ out [31] $end
+$var wire 1 % out [30] $end
+$var wire 1 & out [29] $end
+$var wire 1 ' out [28] $end
+$var wire 1 ( out [27] $end
+$var wire 1 ) out [26] $end
+$var wire 1 * out [25] $end
+$var wire 1 + out [24] $end
+$var wire 1 , out [23] $end
+$var wire 1 - out [22] $end
+$var wire 1 . out [21] $end
+$var wire 1 / out [20] $end
+$var wire 1 0 out [19] $end
+$var wire 1 1 out [18] $end
+$var wire 1 2 out [17] $end
+$var wire 1 3 out [16] $end
+$var wire 1 4 out [15] $end
+$var wire 1 5 out [14] $end
+$var wire 1 6 out [13] $end
+$var wire 1 7 out [12] $end
+$var wire 1 8 out [11] $end
+$var wire 1 9 out [10] $end
+$var wire 1 : out [9] $end
+$var wire 1 ; out [8] $end
+$var wire 1 < out [7] $end
+$var wire 1 = out [6] $end
+$var wire 1 > out [5] $end
+$var wire 1 ? out [4] $end
+$var wire 1 @ out [3] $end
+$var wire 1 A out [2] $end
+$var wire 1 B out [1] $end
+$var wire 1 C out [0] $end
 
 $scope module i1 $end
-$var wire 1 F gnd $end
-$var wire 1 G vcc $end
-$var wire 1 H unknown $end
-$var tri1 1 I devclrn $end
-$var tri1 1 J devpor $end
-$var tri1 1 K devoe $end
-$var wire 1 L dataRAMOutput[0]~output_o $end
-$var wire 1 M dataRAMOutput[1]~output_o $end
-$var wire 1 N dataRAMOutput[2]~output_o $end
-$var wire 1 O dataRAMOutput[3]~output_o $end
-$var wire 1 P dataRAMOutput[4]~output_o $end
-$var wire 1 Q dataRAMOutput[5]~output_o $end
-$var wire 1 R dataRAMOutput[6]~output_o $end
-$var wire 1 S dataRAMOutput[7]~output_o $end
-$var wire 1 T dataRAMOutput[8]~output_o $end
-$var wire 1 U dataRAMOutput[9]~output_o $end
-$var wire 1 V dataRAMOutput[10]~output_o $end
-$var wire 1 W dataRAMOutput[11]~output_o $end
-$var wire 1 X dataRAMOutput[12]~output_o $end
-$var wire 1 Y dataRAMOutput[13]~output_o $end
-$var wire 1 Z dataRAMOutput[14]~output_o $end
-$var wire 1 [ dataRAMOutput[15]~output_o $end
-$var wire 1 \ dataRAMOutput[16]~output_o $end
-$var wire 1 ] dataRAMOutput[17]~output_o $end
-$var wire 1 ^ dataRAMOutput[18]~output_o $end
-$var wire 1 _ dataRAMOutput[19]~output_o $end
-$var wire 1 ` dataRAMOutput[20]~output_o $end
-$var wire 1 a dataRAMOutput[21]~output_o $end
-$var wire 1 b dataRAMOutput[22]~output_o $end
-$var wire 1 c dataRAMOutput[23]~output_o $end
-$var wire 1 d dataRAMOutput[24]~output_o $end
-$var wire 1 e dataRAMOutput[25]~output_o $end
-$var wire 1 f dataRAMOutput[26]~output_o $end
-$var wire 1 g dataRAMOutput[27]~output_o $end
-$var wire 1 h dataRAMOutput[28]~output_o $end
-$var wire 1 i dataRAMOutput[29]~output_o $end
-$var wire 1 j dataRAMOutput[30]~output_o $end
-$var wire 1 k dataRAMOutput[31]~output_o $end
-$var wire 1 l cu_writeEnable~input_o $end
-$var wire 1 m clock~input_o $end
-$var wire 1 n clock~inputclkctrl_outclk $end
-$var wire 1 o writeData[0]~input_o $end
-$var wire 1 p memoryAddy[0]~input_o $end
-$var wire 1 q memoryAddy[1]~input_o $end
-$var wire 1 r memoryAddy[2]~input_o $end
-$var wire 1 s memoryAddy[3]~input_o $end
-$var wire 1 t memoryAddy[4]~input_o $end
-$var wire 1 u memoryAddy[5]~input_o $end
-$var wire 1 v memoryAddy[6]~input_o $end
-$var wire 1 w memoryAddy[7]~input_o $end
-$var wire 1 x memoryAddy[8]~input_o $end
-$var wire 1 y memoryAddy[9]~input_o $end
-$var wire 1 z cu_readEnable~input_o $end
-$var wire 1 { regAddy~0_combout $end
-$var wire 1 | regAddy~1_combout $end
-$var wire 1 } regAddy~2_combout $end
-$var wire 1 ~ regAddy~3_combout $end
-$var wire 1 !! regAddy~4_combout $end
-$var wire 1 "! regAddy~5_combout $end
-$var wire 1 #! regAddy~6_combout $end
-$var wire 1 $! regAddy~7_combout $end
-$var wire 1 %! regAddy~8_combout $end
-$var wire 1 &! regAddy~9_combout $end
-$var wire 1 '! writeData[1]~input_o $end
-$var wire 1 (! writeData[2]~input_o $end
-$var wire 1 )! writeData[3]~input_o $end
-$var wire 1 *! writeData[4]~input_o $end
-$var wire 1 +! writeData[5]~input_o $end
-$var wire 1 ,! writeData[6]~input_o $end
-$var wire 1 -! writeData[7]~input_o $end
-$var wire 1 .! writeData[8]~input_o $end
-$var wire 1 /! RAM_rtl_0|auto_generated|ram_block1a0~portbdataout $end
-$var wire 1 0! RAM_rtl_0_bypass[15]~feeder_combout $end
-$var wire 1 1! RAM_rtl_0_bypass[13]~feeder_combout $end
-$var wire 1 2! RAM_rtl_0_bypass[16]~feeder_combout $end
-$var wire 1 3! RAM~3_combout $end
-$var wire 1 4! RAM_rtl_0_bypass[12]~feeder_combout $end
-$var wire 1 5! RAM_rtl_0_bypass[9]~feeder_combout $end
-$var wire 1 6! RAM_rtl_0_bypass[11]~feeder_combout $end
-$var wire 1 7! RAM~2_combout $end
-$var wire 1 8! RAM_rtl_0_bypass[8]~feeder_combout $end
-$var wire 1 9! RAM~1_combout $end
-$var wire 1 :! RAM_rtl_0_bypass[1]~feeder_combout $end
-$var wire 1 ;! RAM_rtl_0_bypass[4]~feeder_combout $end
-$var wire 1 <! RAM~0_combout $end
-$var wire 1 =! RAM~4_combout $end
-$var wire 1 >! RAM_rtl_0_bypass[20]~feeder_combout $end
-$var wire 1 ?! RAM~5_combout $end
-$var wire 1 @! RAM~6_combout $end
-$var wire 1 A! RAM~7_combout $end
-$var wire 1 B! RAM_rtl_0|auto_generated|ram_block1a1 $end
-$var wire 1 C! RAM~8_combout $end
-$var wire 1 D! RAM_rtl_0|auto_generated|ram_block1a2 $end
-$var wire 1 E! RAM~9_combout $end
-$var wire 1 F! RAM_rtl_0|auto_generated|ram_block1a3 $end
-$var wire 1 G! RAM~10_combout $end
-$var wire 1 H! RAM_rtl_0|auto_generated|ram_block1a4 $end
-$var wire 1 I! RAM~11_combout $end
-$var wire 1 J! RAM_rtl_0|auto_generated|ram_block1a5 $end
-$var wire 1 K! RAM~12_combout $end
-$var wire 1 L! RAM_rtl_0|auto_generated|ram_block1a6 $end
-$var wire 1 M! RAM~13_combout $end
-$var wire 1 N! RAM_rtl_0|auto_generated|ram_block1a7 $end
-$var wire 1 O! RAM~14_combout $end
-$var wire 1 P! RAM_rtl_0|auto_generated|ram_block1a8 $end
-$var wire 1 Q! RAM~15_combout $end
-$var wire 1 R! writeData[9]~input_o $end
-$var wire 1 S! writeData[10]~input_o $end
-$var wire 1 T! writeData[11]~input_o $end
-$var wire 1 U! writeData[12]~input_o $end
-$var wire 1 V! writeData[13]~input_o $end
-$var wire 1 W! writeData[14]~input_o $end
-$var wire 1 X! writeData[15]~input_o $end
-$var wire 1 Y! writeData[16]~input_o $end
-$var wire 1 Z! writeData[17]~input_o $end
-$var wire 1 [! RAM_rtl_0|auto_generated|ram_block1a9~portbdataout $end
-$var wire 1 \! RAM~16_combout $end
-$var wire 1 ]! RAM_rtl_0|auto_generated|ram_block1a10 $end
-$var wire 1 ^! RAM~17_combout $end
-$var wire 1 _! RAM_rtl_0|auto_generated|ram_block1a11 $end
-$var wire 1 `! RAM~18_combout $end
-$var wire 1 a! RAM_rtl_0|auto_generated|ram_block1a12 $end
-$var wire 1 b! RAM~19_combout $end
-$var wire 1 c! RAM_rtl_0|auto_generated|ram_block1a13 $end
-$var wire 1 d! RAM~20_combout $end
-$var wire 1 e! RAM_rtl_0|auto_generated|ram_block1a14 $end
-$var wire 1 f! RAM~21_combout $end
-$var wire 1 g! RAM_rtl_0|auto_generated|ram_block1a15 $end
-$var wire 1 h! RAM~22_combout $end
-$var wire 1 i! RAM_rtl_0|auto_generated|ram_block1a16 $end
-$var wire 1 j! RAM~23_combout $end
-$var wire 1 k! RAM_rtl_0|auto_generated|ram_block1a17 $end
-$var wire 1 l! RAM~24_combout $end
-$var wire 1 m! writeData[18]~input_o $end
-$var wire 1 n! writeData[19]~input_o $end
-$var wire 1 o! writeData[20]~input_o $end
-$var wire 1 p! writeData[21]~input_o $end
-$var wire 1 q! writeData[22]~input_o $end
-$var wire 1 r! writeData[23]~input_o $end
-$var wire 1 s! writeData[24]~input_o $end
-$var wire 1 t! writeData[25]~input_o $end
-$var wire 1 u! writeData[26]~input_o $end
-$var wire 1 v! RAM_rtl_0|auto_generated|ram_block1a18~portbdataout $end
-$var wire 1 w! RAM~25_combout $end
-$var wire 1 x! RAM_rtl_0|auto_generated|ram_block1a19 $end
-$var wire 1 y! RAM~26_combout $end
-$var wire 1 z! RAM_rtl_0|auto_generated|ram_block1a20 $end
-$var wire 1 {! RAM~27_combout $end
-$var wire 1 |! RAM_rtl_0|auto_generated|ram_block1a21 $end
-$var wire 1 }! RAM~28_combout $end
-$var wire 1 ~! RAM_rtl_0|auto_generated|ram_block1a22 $end
-$var wire 1 !" RAM~29_combout $end
-$var wire 1 "" RAM_rtl_0|auto_generated|ram_block1a23 $end
-$var wire 1 #" RAM~30_combout $end
-$var wire 1 $" RAM_rtl_0|auto_generated|ram_block1a24 $end
-$var wire 1 %" RAM~31_combout $end
-$var wire 1 &" RAM_rtl_0|auto_generated|ram_block1a25 $end
-$var wire 1 '" RAM~32_combout $end
-$var wire 1 (" RAM_rtl_0|auto_generated|ram_block1a26 $end
-$var wire 1 )" RAM~33_combout $end
-$var wire 1 *" writeData[27]~input_o $end
-$var wire 1 +" writeData[28]~input_o $end
-$var wire 1 ," writeData[29]~input_o $end
-$var wire 1 -" writeData[30]~input_o $end
-$var wire 1 ." writeData[31]~input_o $end
-$var wire 1 /" RAM_rtl_0|auto_generated|ram_block1a27~portbdataout $end
-$var wire 1 0" RAM~34_combout $end
-$var wire 1 1" RAM_rtl_0|auto_generated|ram_block1a28 $end
-$var wire 1 2" RAM~35_combout $end
-$var wire 1 3" RAM_rtl_0|auto_generated|ram_block1a29 $end
-$var wire 1 4" RAM~36_combout $end
-$var wire 1 5" RAM_rtl_0|auto_generated|ram_block1a30 $end
-$var wire 1 6" RAM~37_combout $end
-$var wire 1 7" RAM_rtl_0|auto_generated|ram_block1a31 $end
-$var wire 1 8" RAM~38_combout $end
-$var wire 1 9" RAM_rtl_0_bypass [0] $end
-$var wire 1 :" RAM_rtl_0_bypass [1] $end
-$var wire 1 ;" RAM_rtl_0_bypass [2] $end
-$var wire 1 <" RAM_rtl_0_bypass [3] $end
-$var wire 1 =" RAM_rtl_0_bypass [4] $end
-$var wire 1 >" RAM_rtl_0_bypass [5] $end
-$var wire 1 ?" RAM_rtl_0_bypass [6] $end
-$var wire 1 @" RAM_rtl_0_bypass [7] $end
-$var wire 1 A" RAM_rtl_0_bypass [8] $end
-$var wire 1 B" RAM_rtl_0_bypass [9] $end
-$var wire 1 C" RAM_rtl_0_bypass [10] $end
-$var wire 1 D" RAM_rtl_0_bypass [11] $end
-$var wire 1 E" RAM_rtl_0_bypass [12] $end
-$var wire 1 F" RAM_rtl_0_bypass [13] $end
-$var wire 1 G" RAM_rtl_0_bypass [14] $end
-$var wire 1 H" RAM_rtl_0_bypass [15] $end
-$var wire 1 I" RAM_rtl_0_bypass [16] $end
-$var wire 1 J" RAM_rtl_0_bypass [17] $end
-$var wire 1 K" RAM_rtl_0_bypass [18] $end
-$var wire 1 L" RAM_rtl_0_bypass [19] $end
-$var wire 1 M" RAM_rtl_0_bypass [20] $end
-$var wire 1 N" RAM_rtl_0_bypass [21] $end
-$var wire 1 O" RAM_rtl_0_bypass [22] $end
-$var wire 1 P" RAM_rtl_0_bypass [23] $end
-$var wire 1 Q" RAM_rtl_0_bypass [24] $end
-$var wire 1 R" RAM_rtl_0_bypass [25] $end
-$var wire 1 S" RAM_rtl_0_bypass [26] $end
-$var wire 1 T" RAM_rtl_0_bypass [27] $end
-$var wire 1 U" RAM_rtl_0_bypass [28] $end
-$var wire 1 V" RAM_rtl_0_bypass [29] $end
-$var wire 1 W" RAM_rtl_0_bypass [30] $end
-$var wire 1 X" RAM_rtl_0_bypass [31] $end
-$var wire 1 Y" RAM_rtl_0_bypass [32] $end
-$var wire 1 Z" RAM_rtl_0_bypass [33] $end
-$var wire 1 [" RAM_rtl_0_bypass [34] $end
-$var wire 1 \" RAM_rtl_0_bypass [35] $end
-$var wire 1 ]" RAM_rtl_0_bypass [36] $end
-$var wire 1 ^" RAM_rtl_0_bypass [37] $end
-$var wire 1 _" RAM_rtl_0_bypass [38] $end
-$var wire 1 `" RAM_rtl_0_bypass [39] $end
-$var wire 1 a" RAM_rtl_0_bypass [40] $end
-$var wire 1 b" RAM_rtl_0_bypass [41] $end
-$var wire 1 c" RAM_rtl_0_bypass [42] $end
-$var wire 1 d" RAM_rtl_0_bypass [43] $end
-$var wire 1 e" RAM_rtl_0_bypass [44] $end
-$var wire 1 f" RAM_rtl_0_bypass [45] $end
-$var wire 1 g" RAM_rtl_0_bypass [46] $end
-$var wire 1 h" RAM_rtl_0_bypass [47] $end
-$var wire 1 i" RAM_rtl_0_bypass [48] $end
-$var wire 1 j" RAM_rtl_0_bypass [49] $end
-$var wire 1 k" RAM_rtl_0_bypass [50] $end
-$var wire 1 l" RAM_rtl_0_bypass [51] $end
-$var wire 1 m" RAM_rtl_0_bypass [52] $end
-$var wire 1 n" regAddy [9] $end
-$var wire 1 o" regAddy [8] $end
-$var wire 1 p" regAddy [7] $end
-$var wire 1 q" regAddy [6] $end
-$var wire 1 r" regAddy [5] $end
-$var wire 1 s" regAddy [4] $end
-$var wire 1 t" regAddy [3] $end
-$var wire 1 u" regAddy [2] $end
-$var wire 1 v" regAddy [1] $end
-$var wire 1 w" regAddy [0] $end
-$var wire 1 x" RAM_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [8] $end
-$var wire 1 y" RAM_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [7] $end
-$var wire 1 z" RAM_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [6] $end
-$var wire 1 {" RAM_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [5] $end
-$var wire 1 |" RAM_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [4] $end
-$var wire 1 }" RAM_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [3] $end
-$var wire 1 ~" RAM_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [2] $end
-$var wire 1 !# RAM_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [1] $end
-$var wire 1 "# RAM_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [0] $end
-$var wire 1 ## RAM_rtl_0|auto_generated|ram_block1a9_PORTBDATAOUT_bus [8] $end
-$var wire 1 $# RAM_rtl_0|auto_generated|ram_block1a9_PORTBDATAOUT_bus [7] $end
-$var wire 1 %# RAM_rtl_0|auto_generated|ram_block1a9_PORTBDATAOUT_bus [6] $end
-$var wire 1 &# RAM_rtl_0|auto_generated|ram_block1a9_PORTBDATAOUT_bus [5] $end
-$var wire 1 '# RAM_rtl_0|auto_generated|ram_block1a9_PORTBDATAOUT_bus [4] $end
-$var wire 1 (# RAM_rtl_0|auto_generated|ram_block1a9_PORTBDATAOUT_bus [3] $end
-$var wire 1 )# RAM_rtl_0|auto_generated|ram_block1a9_PORTBDATAOUT_bus [2] $end
-$var wire 1 *# RAM_rtl_0|auto_generated|ram_block1a9_PORTBDATAOUT_bus [1] $end
-$var wire 1 +# RAM_rtl_0|auto_generated|ram_block1a9_PORTBDATAOUT_bus [0] $end
-$var wire 1 ,# RAM_rtl_0|auto_generated|ram_block1a18_PORTBDATAOUT_bus [8] $end
-$var wire 1 -# RAM_rtl_0|auto_generated|ram_block1a18_PORTBDATAOUT_bus [7] $end
-$var wire 1 .# RAM_rtl_0|auto_generated|ram_block1a18_PORTBDATAOUT_bus [6] $end
-$var wire 1 /# RAM_rtl_0|auto_generated|ram_block1a18_PORTBDATAOUT_bus [5] $end
-$var wire 1 0# RAM_rtl_0|auto_generated|ram_block1a18_PORTBDATAOUT_bus [4] $end
-$var wire 1 1# RAM_rtl_0|auto_generated|ram_block1a18_PORTBDATAOUT_bus [3] $end
-$var wire 1 2# RAM_rtl_0|auto_generated|ram_block1a18_PORTBDATAOUT_bus [2] $end
-$var wire 1 3# RAM_rtl_0|auto_generated|ram_block1a18_PORTBDATAOUT_bus [1] $end
-$var wire 1 4# RAM_rtl_0|auto_generated|ram_block1a18_PORTBDATAOUT_bus [0] $end
-$var wire 1 5# RAM_rtl_0|auto_generated|ram_block1a27_PORTBDATAOUT_bus [8] $end
-$var wire 1 6# RAM_rtl_0|auto_generated|ram_block1a27_PORTBDATAOUT_bus [7] $end
-$var wire 1 7# RAM_rtl_0|auto_generated|ram_block1a27_PORTBDATAOUT_bus [6] $end
-$var wire 1 8# RAM_rtl_0|auto_generated|ram_block1a27_PORTBDATAOUT_bus [5] $end
-$var wire 1 9# RAM_rtl_0|auto_generated|ram_block1a27_PORTBDATAOUT_bus [4] $end
-$var wire 1 :# RAM_rtl_0|auto_generated|ram_block1a27_PORTBDATAOUT_bus [3] $end
-$var wire 1 ;# RAM_rtl_0|auto_generated|ram_block1a27_PORTBDATAOUT_bus [2] $end
-$var wire 1 <# RAM_rtl_0|auto_generated|ram_block1a27_PORTBDATAOUT_bus [1] $end
-$var wire 1 =# RAM_rtl_0|auto_generated|ram_block1a27_PORTBDATAOUT_bus [0] $end
+$var wire 1 D gnd $end
+$var wire 1 E vcc $end
+$var wire 1 F unknown $end
+$var tri1 1 G devclrn $end
+$var tri1 1 H devpor $end
+$var tri1 1 I devoe $end
+$var wire 1 J out[0]~output_o $end
+$var wire 1 K out[1]~output_o $end
+$var wire 1 L out[2]~output_o $end
+$var wire 1 M out[3]~output_o $end
+$var wire 1 N out[4]~output_o $end
+$var wire 1 O out[5]~output_o $end
+$var wire 1 P out[6]~output_o $end
+$var wire 1 Q out[7]~output_o $end
+$var wire 1 R out[8]~output_o $end
+$var wire 1 S out[9]~output_o $end
+$var wire 1 T out[10]~output_o $end
+$var wire 1 U out[11]~output_o $end
+$var wire 1 V out[12]~output_o $end
+$var wire 1 W out[13]~output_o $end
+$var wire 1 X out[14]~output_o $end
+$var wire 1 Y out[15]~output_o $end
+$var wire 1 Z out[16]~output_o $end
+$var wire 1 [ out[17]~output_o $end
+$var wire 1 \ out[18]~output_o $end
+$var wire 1 ] out[19]~output_o $end
+$var wire 1 ^ out[20]~output_o $end
+$var wire 1 _ out[21]~output_o $end
+$var wire 1 ` out[22]~output_o $end
+$var wire 1 a out[23]~output_o $end
+$var wire 1 b out[24]~output_o $end
+$var wire 1 c out[25]~output_o $end
+$var wire 1 d out[26]~output_o $end
+$var wire 1 e out[27]~output_o $end
+$var wire 1 f out[28]~output_o $end
+$var wire 1 g out[29]~output_o $end
+$var wire 1 h out[30]~output_o $end
+$var wire 1 i out[31]~output_o $end
+$var wire 1 j extenderOutputA[0]~input_o $end
+$var wire 1 k pcScr~input_o $end
+$var wire 1 l outAddy[0]~input_o $end
+$var wire 1 m Add0~0_combout $end
+$var wire 1 n Add0~2_combout $end
+$var wire 1 o extenderOutputA[1]~input_o $end
+$var wire 1 p outAddy[1]~input_o $end
+$var wire 1 q Add0~1 $end
+$var wire 1 r Add0~3_combout $end
+$var wire 1 s Add0~5_combout $end
+$var wire 1 t extenderOutputA[2]~input_o $end
+$var wire 1 u outAddy[2]~input_o $end
+$var wire 1 v Add0~4 $end
+$var wire 1 w Add0~6_combout $end
+$var wire 1 x Add0~8_combout $end
+$var wire 1 y outAddy[3]~input_o $end
+$var wire 1 z Add0~7 $end
+$var wire 1 { Add0~9_combout $end
+$var wire 1 | extenderOutputA[3]~input_o $end
+$var wire 1 } Add0~11_combout $end
+$var wire 1 ~ extenderOutputA[4]~input_o $end
+$var wire 1 !! outAddy[4]~input_o $end
+$var wire 1 "! Add0~10 $end
+$var wire 1 #! Add0~12_combout $end
+$var wire 1 $! Add0~14_combout $end
+$var wire 1 %! outAddy[5]~input_o $end
+$var wire 1 &! Add0~13 $end
+$var wire 1 '! Add0~15_combout $end
+$var wire 1 (! extenderOutputA[5]~input_o $end
+$var wire 1 )! Add0~17_combout $end
+$var wire 1 *! outAddy[6]~input_o $end
+$var wire 1 +! Add0~16 $end
+$var wire 1 ,! Add0~18_combout $end
+$var wire 1 -! extenderOutputA[6]~input_o $end
+$var wire 1 .! Add0~20_combout $end
+$var wire 1 /! outAddy[7]~input_o $end
+$var wire 1 0! Add0~19 $end
+$var wire 1 1! Add0~21_combout $end
+$var wire 1 2! extenderOutputA[7]~input_o $end
+$var wire 1 3! Add0~23_combout $end
+$var wire 1 4! outAddy[8]~input_o $end
+$var wire 1 5! Add0~22 $end
+$var wire 1 6! Add0~24_combout $end
+$var wire 1 7! extenderOutputA[8]~input_o $end
+$var wire 1 8! Add0~26_combout $end
+$var wire 1 9! outAddy[9]~input_o $end
+$var wire 1 :! Add0~25 $end
+$var wire 1 ;! Add0~27_combout $end
+$var wire 1 <! extenderOutputA[9]~input_o $end
+$var wire 1 =! Add0~29_combout $end
+$var wire 1 >! outAddy[10]~input_o $end
+$var wire 1 ?! Add0~28 $end
+$var wire 1 @! Add0~30_combout $end
+$var wire 1 A! extenderOutputA[10]~input_o $end
+$var wire 1 B! Add0~32_combout $end
+$var wire 1 C! extenderOutputA[11]~input_o $end
+$var wire 1 D! outAddy[11]~input_o $end
+$var wire 1 E! Add0~31 $end
+$var wire 1 F! Add0~33_combout $end
+$var wire 1 G! Add0~35_combout $end
+$var wire 1 H! outAddy[12]~input_o $end
+$var wire 1 I! Add0~34 $end
+$var wire 1 J! Add0~36_combout $end
+$var wire 1 K! extenderOutputA[12]~input_o $end
+$var wire 1 L! Add0~38_combout $end
+$var wire 1 M! outAddy[13]~input_o $end
+$var wire 1 N! Add0~37 $end
+$var wire 1 O! Add0~39_combout $end
+$var wire 1 P! extenderOutputA[13]~input_o $end
+$var wire 1 Q! Add0~41_combout $end
+$var wire 1 R! extenderOutputA[14]~input_o $end
+$var wire 1 S! outAddy[14]~input_o $end
+$var wire 1 T! Add0~40 $end
+$var wire 1 U! Add0~42_combout $end
+$var wire 1 V! Add0~44_combout $end
+$var wire 1 W! outAddy[15]~input_o $end
+$var wire 1 X! Add0~43 $end
+$var wire 1 Y! Add0~45_combout $end
+$var wire 1 Z! extenderOutputA[15]~input_o $end
+$var wire 1 [! Add0~47_combout $end
+$var wire 1 \! extenderOutputA[16]~input_o $end
+$var wire 1 ]! Add0~46 $end
+$var wire 1 ^! Add0~48_combout $end
+$var wire 1 _! Add0~50_combout $end
+$var wire 1 `! extenderOutputA[17]~input_o $end
+$var wire 1 a! out~0_combout $end
+$var wire 1 b! extenderOutputA[18]~input_o $end
+$var wire 1 c! out~1_combout $end
+$var wire 1 d! extenderOutputA[19]~input_o $end
+$var wire 1 e! out~2_combout $end
+$var wire 1 f! extenderOutputA[20]~input_o $end
+$var wire 1 g! out~3_combout $end
+$var wire 1 h! extenderOutputA[21]~input_o $end
+$var wire 1 i! out~4_combout $end
+$var wire 1 j! extenderOutputA[22]~input_o $end
+$var wire 1 k! out~5_combout $end
+$var wire 1 l! extenderOutputA[23]~input_o $end
+$var wire 1 m! out~6_combout $end
+$var wire 1 n! extenderOutputA[24]~input_o $end
+$var wire 1 o! out~7_combout $end
+$var wire 1 p! extenderOutputA[25]~input_o $end
+$var wire 1 q! out~8_combout $end
+$var wire 1 r! extenderOutputA[26]~input_o $end
+$var wire 1 s! out~9_combout $end
+$var wire 1 t! extenderOutputA[27]~input_o $end
+$var wire 1 u! out~10_combout $end
+$var wire 1 v! extenderOutputA[28]~input_o $end
+$var wire 1 w! out~11_combout $end
+$var wire 1 x! extenderOutputA[29]~input_o $end
+$var wire 1 y! out~12_combout $end
+$var wire 1 z! extenderOutputA[30]~input_o $end
+$var wire 1 {! out~13_combout $end
+$var wire 1 |! extenderOutputA[31]~input_o $end
+$var wire 1 }! out~14_combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-0!
-0"
+b100011 !
+b10100 "
 0#
-b11000 $
-b1000101 %
-0E
-0D
-0C
+1C
 0B
-0A
+1A
 0@
-0?
+1?
 0>
 0=
 0<
@@ -368,15 +240,19 @@ b1000101 %
 0(
 0'
 0&
-0F
+0%
+0$
+0D
+1E
+xF
 1G
-xH
+1H
 1I
 1J
-1K
-0L
+0K
+1L
 0M
-0N
+1N
 0O
 0P
 0Q
@@ -404,56 +280,56 @@ xH
 0g
 0h
 0i
-0j
+1j
 0k
 0l
-0m
-0n
+1m
+1n
 1o
 0p
 0q
 0r
-1s
-1t
-0u
-0v
-0w
-0x
+0s
+0t
+1u
+1v
+1w
+1x
 0y
 0z
 0{
 0|
 0}
 0~
-0!!
-0"!
-0#!
-0$!
+1!!
+1"!
+1#!
+1$!
 0%!
 0&!
 0'!
 1(!
 0)!
 0*!
-0+!
-1,!
+1+!
+0,!
 0-!
 0.!
 0/!
 00!
 01!
 02!
-13!
+03!
 04!
 15!
 06!
-17!
+07!
 08!
-19!
+09!
 0:!
 0;!
-1<!
-1=!
+0<!
+0=!
 0>!
 1?!
 0@!
@@ -465,7 +341,7 @@ xH
 0F!
 0G!
 0H!
-0I!
+1I!
 0J!
 0K!
 0L!
@@ -476,7 +352,7 @@ xH
 0Q!
 0R!
 0S!
-0T!
+1T!
 0U!
 0V!
 0W!
@@ -485,7 +361,7 @@ xH
 0Z!
 0[!
 0\!
-0]!
+1]!
 0^!
 0_!
 0`!
@@ -518,221 +394,5 @@ xH
 0{!
 0|!
 0}!
-0~!
-0!"
-0""
-0#"
-0$"
-0%"
-0&"
-0'"
-0("
-0)"
-0*"
-0+"
-0,"
-0-"
-0."
-0/"
-00"
-01"
-02"
-03"
-04"
-05"
-06"
-07"
-08"
-0m"
-0l"
-0k"
-0j"
-0i"
-0h"
-0g"
-0f"
-0e"
-0d"
-0c"
-0b"
-0a"
-0`"
-0_"
-0^"
-0]"
-0\"
-0["
-0Z"
-0Y"
-0X"
-0W"
-0V"
-0U"
-0T"
-0S"
-0R"
-0Q"
-0P"
-0O"
-0N"
-0M"
-0L"
-0K"
-0J"
-0I"
-0H"
-0G"
-0F"
-0E"
-0D"
-0C"
-0B"
-0A"
-0@"
-0?"
-0>"
-0="
-0<"
-0;"
-0:"
-09"
-0w"
-0v"
-0u"
-0t"
-0s"
-0r"
-0q"
-0p"
-0o"
-0n"
-0"#
-0!#
-0~"
-0}"
-0|"
-0{"
-0z"
-0y"
-0x"
-0+#
-0*#
-0)#
-0(#
-0'#
-0&#
-0%#
-0$#
-0##
-04#
-03#
-02#
-01#
-00#
-0/#
-0.#
-0-#
-0,#
-0=#
-0<#
-0;#
-0:#
-09#
-08#
-07#
-06#
-05#
 $end
-#30000
-1"
-1z
-1!!
-1~
-18!
-#40000
-1!
-1m
-1n
-#150000
-0!
-0m
-0n
-1t"
-1s"
-1N"
-1B"
-1C"
-1@"
-1A"
-1P"
-1T"
-#160000
-0"
-0z
-#240000
-1#
-1l
-#250000
-1!
-1m
-1n
-#310000
-0!
-0m
-0n
-19"
-1@!
-1M!
-1E!
-1A!
-1L
-1N
-1R
-1?
-1C
-1E
-#330000
-0#
-0l
-#430000
-1"
-1z
-#460000
-1!
-1m
-1n
-#550000
-0!
-0m
-0n
-09"
-0@!
-0M!
-0E!
-0A!
-0L
-0N
-0R
-0?
-0C
-0E
-#550001
-1"#
-1~"
-1z"
-1L!
-1D!
-1/!
-1M!
-1E!
-1A!
-1L
-1N
-1R
-1?
-1C
-1E
-#570000
-0"
-0z
 #1000000
