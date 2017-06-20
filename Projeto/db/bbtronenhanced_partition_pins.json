@@ -4,327 +4,75 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "out[0]",
+					"name" : "wire_out_pcsrc[0]",
 					"strict" : false
 				},
 				{
-					"name" : "out[1]",
+					"name" : "wire_out_pcsrc[1]",
 					"strict" : false
 				},
 				{
-					"name" : "out[2]",
+					"name" : "wire_out_pcsrc[2]",
 					"strict" : false
 				},
 				{
-					"name" : "out[3]",
+					"name" : "wire_out_pcsrc[3]",
 					"strict" : false
 				},
 				{
-					"name" : "out[4]",
+					"name" : "wire_out_pcsrc[4]",
 					"strict" : false
 				},
 				{
-					"name" : "out[5]",
+					"name" : "wire_out_pcsrc[5]",
 					"strict" : false
 				},
 				{
-					"name" : "out[6]",
+					"name" : "wire_out_pcsrc[6]",
 					"strict" : false
 				},
 				{
-					"name" : "out[7]",
+					"name" : "wire_out_pcsrc[7]",
 					"strict" : false
 				},
 				{
-					"name" : "out[8]",
+					"name" : "wire_out_pcsrc[8]",
 					"strict" : false
 				},
 				{
-					"name" : "out[9]",
+					"name" : "wire_out_pcsrc[9]",
 					"strict" : false
 				},
 				{
-					"name" : "out[10]",
+					"name" : "wire_out_pcsrc[10]",
 					"strict" : false
 				},
 				{
-					"name" : "out[11]",
+					"name" : "wire_out_pcsrc[11]",
 					"strict" : false
 				},
 				{
-					"name" : "out[12]",
+					"name" : "wire_out_pcsrc[12]",
 					"strict" : false
 				},
 				{
-					"name" : "out[13]",
+					"name" : "wire_out_pcsrc[13]",
 					"strict" : false
 				},
 				{
-					"name" : "out[14]",
+					"name" : "wire_out_pcsrc[14]",
 					"strict" : false
 				},
 				{
-					"name" : "out[15]",
+					"name" : "wire_out_pcsrc[15]",
 					"strict" : false
 				},
 				{
-					"name" : "out[16]",
+					"name" : "wire_out_pcsrc[16]",
 					"strict" : false
 				},
 				{
-					"name" : "out[17]",
-					"strict" : false
-				},
-				{
-					"name" : "out[18]",
-					"strict" : false
-				},
-				{
-					"name" : "out[19]",
-					"strict" : false
-				},
-				{
-					"name" : "out[20]",
-					"strict" : false
-				},
-				{
-					"name" : "out[21]",
-					"strict" : false
-				},
-				{
-					"name" : "out[22]",
-					"strict" : false
-				},
-				{
-					"name" : "out[23]",
-					"strict" : false
-				},
-				{
-					"name" : "out[24]",
-					"strict" : false
-				},
-				{
-					"name" : "out[25]",
-					"strict" : false
-				},
-				{
-					"name" : "out[26]",
-					"strict" : false
-				},
-				{
-					"name" : "out[27]",
-					"strict" : false
-				},
-				{
-					"name" : "out[28]",
-					"strict" : false
-				},
-				{
-					"name" : "out[29]",
-					"strict" : false
-				},
-				{
-					"name" : "out[30]",
-					"strict" : false
-				},
-				{
-					"name" : "out[31]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[0]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[0]",
-					"strict" : false
-				},
-				{
-					"name" : "pcScr",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[1]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[1]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[2]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[2]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[3]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[3]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[4]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[4]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[5]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[5]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[6]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[6]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[7]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[7]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[8]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[8]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[9]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[9]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[10]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[10]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[11]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[11]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[12]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[12]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[13]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[13]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[14]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[14]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[15]",
-					"strict" : false
-				},
-				{
-					"name" : "outAddy[15]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[16]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[17]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[18]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[19]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[20]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[21]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[22]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[23]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[24]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[25]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[26]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[27]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[28]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[29]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[30]",
-					"strict" : false
-				},
-				{
-					"name" : "extenderOutputA[31]",
+					"name" : "clock",
 					"strict" : false
 				}
 			]

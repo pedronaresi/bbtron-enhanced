@@ -1,34 +1,39 @@
 # do bbtronenhanced.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:02:46 on Jun 16,2017
+# Start time: 00:31:34 on Jun 20,2017
 # vlog -work work bbtronenhanced.vo 
-# -- Compiling module muxPCScr
+# -- Compiling module bbtronenhancedCPU
 # -- Compiling module hard_block
 # 
 # Top level modules:
-# 	muxPCScr
-# End time: 13:02:46 on Jun 16,2017, Elapsed time: 0:00:00
+# 	bbtronenhancedCPU
+# End time: 00:31:35 on Jun 20,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:02:46 on Jun 16,2017
-# vlog -work work Waveform17.vwf.vt 
-# -- Compiling module muxPCScr_vlg_vec_tst
+# Start time: 00:31:35 on Jun 20,2017
+# vlog -work work Waveform24.vwf.vt 
+# -- Compiling module bbtronenhancedCPU_vlg_vec_tst
 # 
 # Top level modules:
-# 	muxPCScr_vlg_vec_tst
-# End time: 13:02:46 on Jun 16,2017, Elapsed time: 0:00:00
+# 	bbtronenhancedCPU_vlg_vec_tst
+# End time: 00:31:35 on Jun 20,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.muxPCScr_vlg_vec_tst 
-# Start time: 13:02:46 on Jun 16,2017
-# Loading work.muxPCScr_vlg_vec_tst
-# Loading work.muxPCScr
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.bbtronenhancedCPU_vlg_vec_tst 
+# Start time: 00:31:35 on Jun 20,2017
+# Loading work.bbtronenhancedCPU_vlg_vec_tst
+# Loading work.bbtronenhancedCPU
 # Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading altera_ver.dffeas
 # Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.PRIM_GDFF_LOW
 # after#26
-# ** Note: $finish    : Waveform17.vwf.vt(49)
-#    Time: 1 us  Iteration: 0  Instance: /muxPCScr_vlg_vec_tst
-# End time: 13:02:47 on Jun 16,2017, Elapsed time: 0:00:01
+# ** Note: $finish    : Waveform24.vwf.vt(55)
+#    Time: 1 us  Iteration: 0  Instance: /bbtronenhancedCPU_vlg_vec_tst
+# End time: 00:31:35 on Jun 20,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

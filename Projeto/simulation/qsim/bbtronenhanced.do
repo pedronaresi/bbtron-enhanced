@@ -1,11 +1,11 @@
 onerror {exit -code 1}
 vlib work
 vlog -work work bbtronenhanced.vo
-vlog -work work Waveform17.vwf.vt
-vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.muxPCScr_vlg_vec_tst
+vlog -work work Waveform24.vwf.vt
+vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.bbtronenhancedCPU_vlg_vec_tst
 vcd file -direction bbtronenhanced.msim.vcd
-vcd add -internal muxPCScr_vlg_vec_tst/*
-vcd add -internal muxPCScr_vlg_vec_tst/i1/*
+vcd add -internal bbtronenhancedCPU_vlg_vec_tst/*
+vcd add -internal bbtronenhancedCPU_vlg_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {

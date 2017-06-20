@@ -1,12 +1,12 @@
-module bbtron_enhancedCPU (clock, switches, outputA, outputB, outputC);
+module bbtronenhancedCPU (clock, switches, wire_out1, wire_out2, wire_out3, wire_negative, wire_out_pcsrc);
   //Entradas: Clock e Switches
   input clock;
   input [15:0] switches;
 
   // Saídas para os displays.
-  output wire [6:0] outputA;
-  output wire [6:0] outputB;
-  output wire [6:0] outputC;
+  //output wire [6:0] outputA;
+  //output wire [6:0] outputB;
+  //output wire [6:0] outputC;
 
   //Wires para a Control Unity.
   wire wire_cu_writeReg;
@@ -46,6 +46,12 @@ module bbtron_enhancedCPU (clock, switches, outputA, outputB, outputC);
   wire [31:0] wire_aluOut;
   wire wire_negative;
   wire wire_zero;
+  
+  //Wires para "Out Module"
+  output wire [6:0] wire_out1;
+  output wire [6:0] wire_out2;
+  output wire [6:0] wire_out3;
+  output wire wire_negative;
 
   //Wires para "Register Destination MUX".
   wire [4:0] wire_out_regdest;
@@ -66,12 +72,12 @@ module bbtron_enhancedCPU (clock, switches, outputA, outputB, outputC);
   wire wire_out_andmux;
 
   //Wires para "PC Source MUX".
-  wire [31:0] wire_out_pcsrc;
+  output wire [31:0] wire_out_pcsrc;
 
   //Instancia dos módulos.
 
   //Program Counter_OK_VERIFICAR SE ESTA CORRETO
-  programCounter inst_programCounter(.inAddy(wire_out_jump [15:0]), .outAddy(wire_outAddy [15:0]), .hlt(wire_cu_hlt), .clock(clock), .reset(wire_cu_reset);
+  programCounter inst_programCounter(.inAddy(wire_out_jump [15:0]), .outAddy(wire_outAddy [15:0]), .hlt(wire_cu_hlt), .clock(clock), .reset(wire_cu_reset));
 
   //Instruction Memory_OK_TESTAR SE ESTA CORRETO
   instructionMemory inst_instructionMemory(.addy(wire_outAddy [15:0]), .clock(clock), .RAMOuput(wire_dataRAMOutput [31:0]));
@@ -92,8 +98,10 @@ module bbtron_enhancedCPU (clock, switches, outputA, outputB, outputC);
   dataMemory inst_dataMemory(.memoryAddy(wire_aluOut [31:0]), .writeData(wire_data2 [31:0]), .cu_writeEnable(wire_cu_writeEnable), .clock(clock), .dataRAMOutput(), .cu_readEnable(wire_cu_readEnable));
 
   //ALU_FALTA NEGATIVE
-  ALU inst_ALU(.data1(wire_data1 [31:0]), .data2(wire_out_aluscr [31:0]), .cu_aluOp(wire_cu_aluOp [3:0]), .zero(wire_zero), .negative(), .shamt(wire_RAMOuput [10:6]), .aluOut(wire_aluOut [31:0]));
-
+  ALU inst_ALU(.data1(wire_data1 [31:0]), .data2(wire_out_aluscr [31:0]), .cu_aluOp(wire_cu_aluOp [3:0]), .zero(wire_zero), /*.negative(),*/ .shamt(wire_RAMOuput [10:6]), .aluOut(wire_aluOut [31:0]));
+  
+  //Out Module
+  outModule inst_outModule(.in(wire_aluOut [31:0]), .out1(wire_out1 [6:0]), .out2(wire_out2 [6:0]), .out3(wire_out3 [6:0]), .negative(wire_negative));
 
   //MUXs
   //Register Destination MUX_OK

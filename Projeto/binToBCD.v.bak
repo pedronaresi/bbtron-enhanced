@@ -1,0 +1,21 @@
+module binToBCD ( in , centena , dezena , unidade , ne g a t ive ) ;
+input [ 7 : 0 ] in ;
+reg [ 7 : 0 ] in2 ;
+output reg [ 3 : 0 ] centena , dezena , unidade ;
+output reg ne g a t ive ;
+integer i ;
+always@( in )
+begin
+i f ( in [ 7 ] )
+begin
+in2 = ~in + 1 ;
+ne g a t ive = 1 ;
+end
+else
+begin
+in2 = in ;
+ne g a t ive = 0 ;
+end
+centena = 4 ’ d0 ;
+dezena = 4 ’ d0 ;
+unidade = 4 ’ d0 ;

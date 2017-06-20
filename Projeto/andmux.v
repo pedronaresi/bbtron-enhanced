@@ -7,6 +7,8 @@ module andmux (zero, cu_Branch, pcScr);
 
   if(zero && cu_Branch)
     pcScr = 1;
+	else
+	 pcScr = 0;
 	 
   end
 endmodule // and

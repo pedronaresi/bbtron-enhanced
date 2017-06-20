@@ -17,6 +17,7 @@ module registerBench (readAddy1, readAddy2, writeAddy, writeData, data1, data2, 
     if(cu_writeReg == 1)begin
       regBench[writeAddy] = writeData;
       regBench[0] = 32'b0;
+		regBench[1] = 32'b10000000000000000000000000000001;
     end
   end
 

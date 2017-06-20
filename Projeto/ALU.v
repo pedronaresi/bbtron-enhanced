@@ -1,10 +1,10 @@
-module ALU (data1, data2, cu_aluOp, zero, negative, shamt, aluOut);
+module ALU (data1, data2, cu_aluOp, zero, /*negative,*/ shamt, aluOut);
   input [31:0] data1, data2; //Dados para operação da ALU
   input [3:0] cu_aluOp;  //Sinal vindo da unidade de controle para seleção da operação
   input [4:0] shamt; //Sinal para descolocamento.
 
   output reg [31:0] aluOut; //Dados de saída da ALU;
-  output negative;
+  //output negative;
   output zero;
 
   always @ (cu_aluOp or data1 or data2) begin
@@ -28,6 +28,6 @@ module ALU (data1, data2, cu_aluOp, zero, negative, shamt, aluOut);
   end
 
   assign zero = (aluOut == 0); //Se o aluOut for zero, flag "zero" é ativada.
-  assign negative = ($signed(aluOut) < 0); //Se o aluOut for negativo, flag "negative" é ativada.
+  //assign negative = ($signed(aluOut) < 0); //Se o aluOut for negativo, flag "negative" é ativada.
 
 endmodule // Unidade lógica e aritimética.

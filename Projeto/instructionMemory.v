@@ -11,6 +11,8 @@ module instructionMemory (addy, clock, RAMOuput);
   always @ (posedge clock) begin
     if (firstClock == 0) begin
       // Algoritmmo a ser executado pelo processador
+		instructionRAM[0] = 32'b010110_000000_00000000000000000000;
+		instructionRAM[1] = 32'b010110_000001_00000000000000000000;
       firstClock <= 0;
     end
   end
