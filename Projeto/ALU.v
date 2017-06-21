@@ -24,6 +24,7 @@ module ALU (data1, data2, cu_aluOp, zero, /*negative,*/ shamt, aluOut);
       4'b1100: aluOut = data1 * data2; //Multiplica
       4'b1101: aluOut = data1 / data2; //Divide
       4'b1110: aluOut = data1 % data2; //Resto
+		4'b1111: aluOut = data2 + 0;
 	endcase
   end
 

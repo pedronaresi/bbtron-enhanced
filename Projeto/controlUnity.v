@@ -325,11 +325,11 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
     cu_memtoReg = 1'b0;
     cu_Jump = 1'b0;
     cu_inSignal = 1'b1;
-    cu_aluScr = 1'bx;
+    cu_aluScr = 1'b1;
     cu_writeEnable = 1'b0;
     cu_readEnable = 1'b0;
     cu_Branch = 1'b0;
-    cu_aluOp = 4'b0000;
+    cu_aluOp = 15;
     cu_hlt = 1'b0;
     cu_reset = 1'b0;
     end
@@ -337,13 +337,13 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
     6'b010110: begin //Out
     cu_writeReg = 1'b0;
     cu_regDest = 1'b0;
-    cu_memtoReg = 1'bx;
+    cu_memtoReg = 1'b0;
     cu_Jump = 1'b0;
     cu_inSignal = 1'b0;
-    cu_aluScr = 1'bx;
-    cu_writeEnable = 1'bx;
-    cu_readEnable = 1'bx;
-    cu_Branch = 1'b1;
+    cu_aluScr = 1'b0;
+    cu_writeEnable = 1'b0;
+    cu_readEnable = 1'b0;
+    cu_Branch = 1'b0;
     cu_aluOp = 4'b0000;
     cu_hlt = 1'b0;
     cu_reset = 1'b0;

@@ -1,0 +1,157 @@
+// Copyright (C) 2016  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Intel and sold by Intel or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "06/20/2017 21:39:30"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          bbtronenhancedCPU
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module bbtronenhancedCPU_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clock;
+reg [15:0] switches;
+// wires                                               
+wire [31:0] wire_RAMOutput;
+wire [31:0] wire_data1;
+wire wire_negative;
+wire [6:0] wire_out1;
+wire [6:0] wire_out2;
+wire [6:0] wire_out3;
+wire [31:0] wire_out_pcsrc;
+
+// assign statements (if any)                          
+bbtronenhancedCPU i1 (
+// port map - connection between master ports and signals/registers   
+	.clock(clock),
+	.switches(switches),
+	.wire_RAMOutput(wire_RAMOutput),
+	.wire_data1(wire_data1),
+	.wire_negative(wire_negative),
+	.wire_out1(wire_out1),
+	.wire_out2(wire_out2),
+	.wire_out3(wire_out3),
+	.wire_out_pcsrc(wire_out_pcsrc)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// clock
+initial
+begin
+	clock = 1'b1;
+	# 150000;
+	repeat(2)
+	begin
+		clock = 1'b0;
+		clock = #150000 1'b1;
+		# 150000;
+	end
+	clock = 1'b0;
+	clock = #150000 1'b1;
+end 
+// switches[ 15 ]
+initial
+begin
+	switches[15] = 1'b0;
+end 
+// switches[ 14 ]
+initial
+begin
+	switches[14] = 1'b0;
+end 
+// switches[ 13 ]
+initial
+begin
+	switches[13] = 1'b0;
+end 
+// switches[ 12 ]
+initial
+begin
+	switches[12] = 1'b0;
+end 
+// switches[ 11 ]
+initial
+begin
+	switches[11] = 1'b0;
+end 
+// switches[ 10 ]
+initial
+begin
+	switches[10] = 1'b0;
+end 
+// switches[ 9 ]
+initial
+begin
+	switches[9] = 1'b0;
+end 
+// switches[ 8 ]
+initial
+begin
+	switches[8] = 1'b0;
+end 
+// switches[ 7 ]
+initial
+begin
+	switches[7] = 1'b0;
+end 
+// switches[ 6 ]
+initial
+begin
+	switches[6] = 1'b0;
+end 
+// switches[ 5 ]
+initial
+begin
+	switches[5] = 1'b0;
+end 
+// switches[ 4 ]
+initial
+begin
+	switches[4] = 1'b0;
+end 
+// switches[ 3 ]
+initial
+begin
+	switches[3] = 1'b1;
+end 
+// switches[ 2 ]
+initial
+begin
+	switches[2] = 1'b0;
+end 
+// switches[ 1 ]
+initial
+begin
+	switches[1] = 1'b1;
+end 
+// switches[ 0 ]
+initial
+begin
+	switches[0] = 1'b0;
+end 
+endmodule
+

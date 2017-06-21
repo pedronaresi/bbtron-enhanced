@@ -12,18 +12,16 @@ module registerBench (readAddy1, readAddy2, writeAddy, writeData, data1, data2, 
 
   reg [31:0] regBench [31:0];
 
-
   always @ (posedge clock) begin
-    if(cu_writeReg == 1)begin
+    if(cu_writeReg)begin
       regBench[writeAddy] = writeData;
-      regBench[0] = 32'b0;
-		regBench[1] = 32'b10000000000000000000000000000001;
-    end
+	end
+	 regBench[0] = 32'b0;
   end
 
-  assign data1 = regBench[readAddy1];
-  assign data2 = regBench[readAddy2];
-  assign data3 = regBench[writeAddy];
+  assign data1 = (regBench[readAddy1]);
+  assign data2 = (regBench[readAddy2]);
+  assign data3 = (regBench[writeAddy]);
 
 
 
