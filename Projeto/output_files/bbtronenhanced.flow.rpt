@@ -1,5 +1,5 @@
 Flow report for bbtronenhanced
-Tue Jun 20 22:07:04 2017
+Wed Jun 21 01:02:29 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,21 +41,21 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Jun 20 22:07:04 2017       ;
+; Flow Status                        ; Successful - Wed Jun 21 01:02:29 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; bbtronenhanced                              ;
 ; Top-level Entity Name              ; bbtronenhancedCPU                           ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 92 / 6,272 ( 1 % )                          ;
-;     Total combinational functions  ; 88 / 6,272 ( 1 % )                          ;
-;     Dedicated logic registers      ; 16 / 6,272 ( < 1 % )                        ;
-; Total registers                    ; 16                                          ;
-; Total pins                         ; 135 / 180 ( 75 % )                          ;
+; Total logic elements               ; 183 / 15,408 ( 1 % )                        ;
+;     Total combinational functions  ; 182 / 15,408 ( 1 % )                        ;
+;     Dedicated logic registers      ; 56 / 15,408 ( < 1 % )                       ;
+; Total registers                    ; 56                                          ;
+; Total pins                         ; 167 / 344 ( 49 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
-; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
-; Device                             ; EP4CE6F17C6                                 ;
+; Total memory bits                  ; 0 / 516,096 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
+; Device                             ; EP4CE15F23C6                                ;
 ; Timing Models                      ; Final                                       ;
 +------------------------------------+---------------------------------------------+
 
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/20/2017 22:03:46 ;
+; Start date & time ; 06/21/2017 01:00:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; bbtronenhanced      ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+----------------+-------------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value  ; Entity Name       ; Section Id ;
 +-------------------------------------+----------------------------------------+----------------+-------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 246744092476722.149800702601208        ; --             ; --                ; --         ;
+; COMPILER_SIGNATURE_ID               ; 246744092476722.149801762405488        ; --             ; --                ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --             ; bbtronenhancedCPU ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --             ; bbtronenhancedCPU ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --             ; bbtronenhancedCPU ; Top        ;
@@ -90,13 +90,13 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:13     ; 1.0                     ; 644 MB              ; 00:00:31                           ;
-; Fitter                    ; 00:00:07     ; 1.0                     ; 1288 MB             ; 00:00:08                           ;
-; Assembler                 ; 00:00:00     ; 1.0                     ; 544 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 629 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 497 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 508 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:24     ; --                      ; --                  ; 00:00:44                           ;
+; Analysis & Synthesis      ; 00:01:07     ; 1.0                     ; 813 MB              ; 00:01:22                           ;
+; Fitter                    ; 00:00:11     ; 1.0                     ; 1311 MB             ; 00:00:13                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 550 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 641 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 503 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 514 MB              ; 00:00:01                           ;
+; Total                     ; 00:01:22     ; --                      ; --                  ; 00:01:40                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -121,7 +121,7 @@ quartus_map --read_settings_files=on --write_settings_files=off bbtronenhanced -
 quartus_fit --read_settings_files=off --write_settings_files=off bbtronenhanced -c bbtronenhanced
 quartus_asm --read_settings_files=off --write_settings_files=off bbtronenhanced -c bbtronenhanced
 quartus_sta bbtronenhanced -c bbtronenhanced
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off bbtronenhanced -c bbtronenhanced --vector_source=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/Waveform56.vwf --testbench_file=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim/Waveform56.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off bbtronenhanced -c bbtronenhanced --vector_source=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/Waveform70.vwf --testbench_file=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim/Waveform70.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim/ bbtronenhanced -c bbtronenhanced
 
 

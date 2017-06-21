@@ -24,6 +24,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "wire_out1[5]",
+					"strict" : false
+				},
+				{
 					"name" : "wire_out1[6]",
 					"strict" : false
 				},
@@ -156,7 +160,139 @@
 					"strict" : false
 				},
 				{
-					"name" : "wire_RAMOutput[20]",
+					"name" : "wire_aluOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[6]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[7]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[8]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[9]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[10]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[11]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[12]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[13]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[14]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[15]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[16]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[17]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[18]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[19]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[20]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[21]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[22]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[23]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[24]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[25]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[26]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[27]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[28]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[29]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[30]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_aluOut[31]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_RAMOutput[1]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_RAMOutput[17]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_RAMOutput[22]",
 					"strict" : false
 				},
 				{
@@ -172,39 +308,135 @@
 					"strict" : false
 				},
 				{
+					"name" : "wire_RAMOutput[29]",
+					"strict" : false
+				},
+				{
 					"name" : "wire_RAMOutput[30]",
 					"strict" : false
 				},
 				{
-					"name" : "switches[7]",
+					"name" : "wire_out_memtoreg[1]",
 					"strict" : false
 				},
 				{
-					"name" : "switches[6]",
+					"name" : "wire_out_memtoreg[2]",
 					"strict" : false
 				},
 				{
-					"name" : "switches[5]",
+					"name" : "wire_out_memtoreg[3]",
 					"strict" : false
 				},
 				{
-					"name" : "switches[4]",
+					"name" : "wire_out_memtoreg[4]",
 					"strict" : false
 				},
 				{
-					"name" : "switches[3]",
+					"name" : "wire_out_memtoreg[5]",
 					"strict" : false
 				},
 				{
-					"name" : "switches[2]",
+					"name" : "wire_out_memtoreg[6]",
 					"strict" : false
 				},
 				{
-					"name" : "switches[1]",
+					"name" : "wire_out_memtoreg[7]",
 					"strict" : false
 				},
 				{
-					"name" : "switches[0]",
+					"name" : "wire_out_memtoreg[8]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[9]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[10]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[11]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[12]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[13]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[14]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[15]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[16]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[17]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[18]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[19]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[20]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[21]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[22]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[23]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[24]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[25]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[26]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[27]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[28]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[29]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[30]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_out_memtoreg[31]",
 					"strict" : false
 				},
 				{

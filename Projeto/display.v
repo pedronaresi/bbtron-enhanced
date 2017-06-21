@@ -1,9 +1,11 @@
-module display (Entrada, Saida) ;
+module display (Entrada, Saida, cu_showDisplay) ;
 	input [3:0] Entrada;
 	output reg [6:0] Saida;
+	input cu_showDisplay;
 	
 	always@( * )
 		begin
+			if(cu_showDisplay)begin
 			case (Entrada)
 				4'b0000 : Saida = 7'b0000001 ;
 				4'b0001 : Saida = 7'b1001111 ;
@@ -17,5 +19,8 @@ module display (Entrada, Saida) ;
 				4'b1001 : Saida = 7'b0001100 ;
 				default : Saida = 7'b1111111 ;
 			endcase
+			end
+			else
+				Saida = 7'b1111111 ;
 		end
 endmodule
