@@ -1,4 +1,4 @@
-module bbtronenhancedCPU (clock, switches, wire_out1, wire_out2, wire_out3, wire_negative, wire_out_pcsrc, wire_aluOut, wire_RAMOutput, wire_out_memtoreg);
+module bbtronenhancedCPU (clock, switches, wire_out1, wire_out2, wire_out3, wire_negative, wire_out_pcsrc, wire_aluOut, wire_RAMOutput, wire_out_memtoreg, wire_data1, wire_out_aluscr, wire_cu_aluOp);
   //Entradas: Clock e Switches
   input clock;
   input [15:0] switches;
@@ -18,7 +18,7 @@ module bbtronenhancedCPU (clock, switches, wire_out1, wire_out2, wire_out3, wire
   wire wire_cu_writeEnable;
   wire wire_cu_readEnable;
   wire wire_cu_Branch;
-  wire [3:0] wire_cu_aluOp;
+  output wire [3:0] wire_cu_aluOp;
   wire wire_cu_hlt;
   wire wire_cu_reset;
   wire wire_cu_showDisplay;
@@ -36,7 +36,7 @@ module bbtronenhancedCPU (clock, switches, wire_out1, wire_out2, wire_out3, wire
   wire [31:0] wire_extenderOutputB;
 
   //Wires para "Register Bench".
-  wire [31:0] wire_data1;
+  output wire [31:0] wire_data1;
   wire [31:0] wire_data2;
   wire [31:0] wire_data3;
 
@@ -67,7 +67,7 @@ module bbtronenhancedCPU (clock, switches, wire_out1, wire_out2, wire_out3, wire
   wire [15:0] wire_out_insignal;
 
   //Wires para "ALU Source MUX".
-  wire [31:0] wire_out_aluscr;
+  output wire [31:0] wire_out_aluscr;
 
   //Wires para "And MUX".
   wire wire_out_andmux;

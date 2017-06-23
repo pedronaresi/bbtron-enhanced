@@ -5,12 +5,10 @@ module dataMemory (memoryAddy, writeData, cu_writeEnable, clock, dataRAMOutput, 
 
   output [31:0] dataRAMOutput;
 
-  reg [31:0] RAM[1023:0];
+  reg [31:0] RAM[/*1023*/30:0];
   reg [9:0] regAddy;
 
   always @ (negedge clock) begin
-	RAM[1] = 12;
-	RAM[2] = 24;
     if (cu_writeEnable == 1) begin
       RAM[memoryAddy] = writeData;
 		regAddy = memoryAddy;

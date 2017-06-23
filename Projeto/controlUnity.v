@@ -1,12 +1,13 @@
 module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_inSignal, cu_aluScr, cu_writeEnable, cu_readEnable, cu_Branch, cu_aluOp, cu_hlt, cu_reset, cu_showDisplay);
   input [5:0] opcode;
-  output reg cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_inSignal, cu_aluScr, cu_writeEnable, cu_readEnable, cu_Branch, cu_aluOp, cu_hlt, cu_reset, cu_showDisplay;
+  output reg cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_inSignal, cu_aluScr, cu_writeEnable, cu_readEnable, cu_Branch, cu_hlt, cu_reset, cu_showDisplay;
+  output reg [3:0] cu_aluOp;
 
   always @ (opcode) begin
     case(opcode)
-    6'b000000: begin //Add
+    6'b000000: begin //Add_OK
     cu_writeReg = 1'b1;
-    cu_regDest = 1'b1;
+    cu_regDest = 1'b0;	
     cu_memtoReg = 1'b0;
     cu_Jump = 1'b0;
     cu_inSignal = 1'b0;
@@ -20,9 +21,9 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
 	 cu_showDisplay = 1'b0;
     end
 
-    6'b000001: begin //Subtract
+    6'b000001: begin //Subtract_OK
     cu_writeReg = 1'b1;
-    cu_regDest = 1'b1;
+    cu_regDest = 1'b0;
     cu_memtoReg = 1'b0;
     cu_Jump = 1'b0;
     cu_inSignal = 1'b0;
@@ -30,15 +31,15 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
     cu_writeEnable = 1'b0;
     cu_readEnable = 1'b0;
     cu_Branch = 1'b0;
-    cu_aluOp = 4'b0010;
+	 cu_aluOp = 4'b0010;
     cu_hlt = 1'b0;
     cu_reset = 1'b0;
 	 cu_showDisplay = 1'b0;
     end
 
-    6'b000010: begin //And
+    6'b000010: begin //And_OK
     cu_writeReg = 1'b1;
-    cu_regDest = 1'b1;
+    cu_regDest = 1'b0;
     cu_memtoReg = 1'b0;
     cu_Jump = 1'b0;
     cu_inSignal = 1'b0;
@@ -52,9 +53,9 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
 	 cu_showDisplay = 1'b0;
     end
 
-    6'b000011: begin //Or
+    6'b000011: begin //Or_OK
     cu_writeReg = 1'b1;
-    cu_regDest = 1'b1;
+    cu_regDest = 1'b0;
     cu_memtoReg = 1'b0;
     cu_Jump = 1'b0;
     cu_inSignal = 1'b0;
@@ -68,9 +69,9 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
 	 cu_showDisplay = 1'b0;
     end
 
-    6'b000100: begin //Xor
+    6'b000100: begin //Xor_OK
     cu_writeReg = 1'b1;
-    cu_regDest = 1'b1;
+    cu_regDest = 1'b0;
     cu_memtoReg = 1'b0;
     cu_Jump = 1'b0;
     cu_inSignal = 1'b0;
@@ -84,9 +85,9 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
 	 cu_showDisplay = 1'b0;
     end
 
-    6'b000101: begin //Set on less than
+    6'b000101: begin //Set on less than_OK
     cu_writeReg = 1'b1;
-    cu_regDest = 1'b1;
+    cu_regDest = 1'b0;
     cu_memtoReg = 1'b0;
     cu_Jump = 1'b0;
     cu_inSignal = 1'b0;
@@ -100,9 +101,9 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
 	 cu_showDisplay = 1'b0;
     end
 
-    6'b000110: begin //Multiply
+    6'b000110: begin //Multiply_OK
     cu_writeReg = 1'b1;
-    cu_regDest = 1'b1;
+    cu_regDest = 1'b0;
     cu_memtoReg = 1'b0;
     cu_Jump = 1'b0;
     cu_inSignal = 1'b0;
@@ -116,9 +117,9 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
 	 cu_showDisplay = 1'b0;
     end
 
-    6'b000111: begin //Devide
+    6'b000111: begin //Devide_OK
     cu_writeReg = 1'b1;
-    cu_regDest = 1'b1;
+    cu_regDest = 1'b0;
     cu_memtoReg = 1'b0;
     cu_Jump = 1'b0;
     cu_inSignal = 1'b0;
@@ -132,9 +133,9 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
 	 cu_showDisplay = 1'b0;
     end
 
-    6'b001000: begin //Rest
+    6'b001000: begin //Rest_OK
     cu_writeReg = 1'b1;
-    cu_regDest = 1'b1;
+    cu_regDest = 1'b0;
     cu_memtoReg = 1'b0;
     cu_Jump = 1'b0;
     cu_inSignal = 1'b0;

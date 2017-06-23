@@ -6,7 +6,7 @@ module instructionMemory (addy, clock, RAMOuput);
 
   integer firstClock = 0;
 
-  reg [31:0] instructionRAM [1023:0];
+  reg [31:0] instructionRAM [30:0];
 
   always @ (posedge clock) begin
     if (firstClock == 0) begin
@@ -15,8 +15,28 @@ module instructionMemory (addy, clock, RAMOuput);
 		instructionRAM[1] = 32'b010110_00001_000000000000000000000;
 		instructionRAM[2] = 32'b010101_00000_00010_0000000000000011;
 		instructionRAM[3] = 32'b010110_00001_000000000000000000000;*/
+		instructionRAM[0] = 32'b000001_00001_00010_00011_00000000000;
+		instructionRAM[1] = 32'b010110_00011_000000000000000000000;
+		/*instructionRAM[0] = 32'b01000_00000_00010_0000000000000010; //Store Word do REG[2] no MEM[2].
+		instructionRAM[1] = 32'b001111_00000_00100_0000000000000010; //Load Word do MEM[2] no REG[4].
+		instructionRAM[2] = 32'b010110_00100_000000000000000000000; // OUT no REG[4].
+		/*instructionRAM[3] = 32'b010110_00010_000000000000000000000;
+		instructionRAM[4] = 32'b000001_00010_00011_00100_00000000000;
+		instructionRAM[5] = 32'b010110_00100_000000000000000000000;
+		
+		
+		
+		Instrução do tipo R = 32'bxxxxxx_00100_00000_00000_00000_000000;
+		Instrução do tipo I = 32'bxxxxxx_00100_00000_0000000000000000;
+		Instrução do tipo K = 32'bxxxxxx_00100_000000000000000000000;
+		Instrução do tipo J = 32'bxxxxxx_00000000000000000000000001;
+		
 		instructionRAM[0] = 32'b001111_00000_00010_0000000000000010;
-		instructionRAM[1] = 32'b010110_00010_000000000000000000000;
+		instructionRAM[1] = 32'b001111_00000_00011_0000000000000011;
+		instructionRAM[2] = 32'b010110_00011_000000000000000000000;
+		instructionRAM[3] = 32'b010110_00010_000000000000000000000;
+		instructionRAM[4] = 32'b000001_00010_00011_00100_00000000000;
+		instructionRAM[5] = 32'b010110_00100_000000000000000000000;*/
 
       firstClock <= 0;
     end
