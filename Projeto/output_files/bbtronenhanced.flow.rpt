@@ -1,5 +1,5 @@
 Flow report for bbtronenhanced
-Tue Jun 27 02:09:45 2017
+Tue Jun 27 20:42:32 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,19 +41,19 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Jun 27 02:09:45 2017       ;
+; Flow Status                        ; Successful - Tue Jun 27 20:42:32 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; bbtronenhanced                              ;
 ; Top-level Entity Name              ; bbtronenhancedCPU                           ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 196 / 15,408 ( 1 % )                        ;
-;     Total combinational functions  ; 196 / 15,408 ( 1 % )                        ;
-;     Dedicated logic registers      ; 16 / 15,408 ( < 1 % )                       ;
-; Total registers                    ; 16                                          ;
+; Total logic elements               ; 3,233 / 15,408 ( 21 % )                     ;
+;     Total combinational functions  ; 3,190 / 15,408 ( 21 % )                     ;
+;     Dedicated logic registers      ; 288 / 15,408 ( 2 % )                        ;
+; Total registers                    ; 288                                         ;
 ; Total pins                         ; 235 / 344 ( 68 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 516,096 ( 0 % )                         ;
-; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                             ;
+; Total memory bits                  ; 992 / 516,096 ( < 1 % )                     ;
+; Embedded Multiplier 9-bit elements ; 6 / 112 ( 5 % )                             ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 ; Device                             ; EP4CE15F23C6                                ;
 ; Timing Models                      ; Final                                       ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/27/2017 02:08:31 ;
+; Start date & time ; 06/27/2017 20:38:16 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; bbtronenhanced      ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+----------------+-------------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value  ; Entity Name       ; Section Id ;
 +-------------------------------------+----------------------------------------+----------------+-------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 246744092476722.149854011108276        ; --             ; --                ; --         ;
+; COMPILER_SIGNATURE_ID               ; 246744092476722.149860669614512        ; --             ; --                ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --             ; bbtronenhancedCPU ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --             ; bbtronenhancedCPU ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --             ; bbtronenhancedCPU ; Top        ;
@@ -90,13 +90,13 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 683 MB              ; 00:00:36                           ;
-; Fitter                    ; 00:00:14     ; 1.0                     ; 1307 MB             ; 00:00:13                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 549 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 643 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 500 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 509 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:40     ; --                      ; --                  ; 00:00:54                           ;
+; Analysis & Synthesis      ; 00:00:26     ; 1.0                     ; 678 MB              ; 00:00:35                           ;
+; Fitter                    ; 00:02:31     ; 1.0                     ; 1422 MB             ; 00:02:53                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 557 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:26     ; 3.1                     ; 866 MB              ; 00:00:28                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 513 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 527 MB              ; 00:00:02                           ;
+; Total                     ; 00:03:27     ; --                      ; --                  ; 00:04:00                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

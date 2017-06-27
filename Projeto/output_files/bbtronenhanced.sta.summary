@@ -2,76 +2,76 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'programCounter:inst_programCounter|outAddy[0]'
-Slack : -4.321
-TNS   : -23.850
-
 Type  : Slow 1200mV 85C Model Setup 'clock'
-Slack : -2.112
-TNS   : -30.419
+Slack : -116.153
+TNS   : -29507.607
+
+Type  : Slow 1200mV 85C Model Setup 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -5.408
+TNS   : -66.593
 
 Type  : Slow 1200mV 85C Model Hold 'programCounter:inst_programCounter|outAddy[0]'
-Slack : 0.109
-TNS   : 0.000
+Slack : -0.614
+TNS   : -0.614
 
 Type  : Slow 1200mV 85C Model Hold 'clock'
-Slack : 0.525
-TNS   : 0.000
+Slack : -0.541
+TNS   : -0.541
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -19.000
+TNS   : -299.696
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'programCounter:inst_programCounter|outAddy[0]'
-Slack : 0.392
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'programCounter:inst_programCounter|outAddy[0]'
-Slack : -3.924
-TNS   : -21.497
+Slack : -0.273
+TNS   : -14.317
 
 Type  : Slow 1200mV 0C Model Setup 'clock'
-Slack : -1.797
-TNS   : -25.628
+Slack : -103.513
+TNS   : -26290.465
 
-Type  : Slow 1200mV 0C Model Hold 'programCounter:inst_programCounter|outAddy[0]'
-Slack : 0.099
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -4.913
+TNS   : -60.487
 
 Type  : Slow 1200mV 0C Model Hold 'clock'
-Slack : 0.442
-TNS   : 0.000
+Slack : -0.514
+TNS   : -0.519
+
+Type  : Slow 1200mV 0C Model Hold 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -0.492
+TNS   : -0.492
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -19.000
+TNS   : -299.696
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'programCounter:inst_programCounter|outAddy[0]'
-Slack : 0.426
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'programCounter:inst_programCounter|outAddy[0]'
-Slack : -2.427
-TNS   : -13.039
+Slack : -0.153
+TNS   : -8.422
 
 Type  : Fast 1200mV 0C Model Setup 'clock'
-Slack : -0.783
-TNS   : -10.949
+Slack : -66.034
+TNS   : -16775.475
 
-Type  : Fast 1200mV 0C Model Hold 'programCounter:inst_programCounter|outAddy[0]'
-Slack : 0.062
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Setup 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -3.137
+TNS   : -38.259
 
 Type  : Fast 1200mV 0C Model Hold 'clock'
-Slack : 0.165
-TNS   : 0.000
+Slack : -0.398
+TNS   : -0.843
+
+Type  : Fast 1200mV 0C Model Hold 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -0.335
+TNS   : -0.335
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -19.658
+TNS   : -317.395
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'programCounter:inst_programCounter|outAddy[0]'
-Slack : 0.402
-TNS   : 0.000
+Slack : -0.045
+TNS   : -1.126
 
 ------------------------------------------------------------

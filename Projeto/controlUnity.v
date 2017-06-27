@@ -151,7 +151,7 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
 
     6'b001001: begin //Branch on Equal
     cu_writeReg = 1'b0;
-    cu_regDest = 1'bx;
+    cu_regDest = 1'b1;
     cu_memtoReg = 1'b0;
     cu_Jump = 1'b0;
     cu_inSignal = 1'b0;
@@ -167,7 +167,7 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
 
     6'b001010: begin //Branch on not Equal
     cu_writeReg = 1'b0;
-    cu_regDest = 1'bx;
+    cu_regDest = 1'b1;
     cu_memtoReg = 1'bx;
     cu_Jump = 1'b0;
     cu_inSignal = 1'b0;

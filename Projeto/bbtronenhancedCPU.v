@@ -121,7 +121,7 @@ module bbtronenhancedCPU (clock, switches, wire_out1, wire_out2, wire_out3, wire
   muxALUScr inst_muxALUScr(.data2(wire_data2 [31:0]), .extenderOutputA(wire_extenderOutputA [31:0]), .out(wire_out_aluscr [31:0]), .cu_aluScr(wire_cu_aluScr));
 
   //And MUX_OK
-  andmux inst_andmux(.zero(wire_zero), .cu_Branch(wire_cu_Branch), .pcScr(wire_out_andmux));
+  andmux inst_andmux(.zero(wire_zero), .cu_Branch(wire_cu_Branch), .pcScr(wire_out_andmux), .opcode(wire_RAMOutput [31:26]));
 
   //PC Source MUX_OK
   muxPCScr inst_muxPCScr(.extenderOutputA(wire_extenderOutputA [31:0]), .outAddy(wire_outAddy [15:0]), .out(wire_out_pcsrc [31:0]), .pcScr(wire_out_andmux));
