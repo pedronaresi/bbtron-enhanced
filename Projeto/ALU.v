@@ -12,8 +12,8 @@ module ALU (data1, data2, cu_aluOp, zero, /*negative,*/ shamt, aluOut);
       4'b0000: aluOut = data1; //Mantem
       4'b0001: aluOut = data1 + data2; //Soma
       4'b0010: aluOut = data1 - data2; // Subtrai
-      4'b0011: aluOut = data1 + 1; //Soma 1
-      4'b0100: aluOut = data1 - 1; //Subtrai 1
+      4'b0011: aluOut = data2 + 1; //Soma 1
+      4'b0100: aluOut = data2 - 1; //Subtrai 1
       4'b0101: aluOut = data1 & data2; //And
       4'b0110: aluOut = data1 | data2; //Or
       4'b0111: aluOut = data1 ^ data2; //Xor

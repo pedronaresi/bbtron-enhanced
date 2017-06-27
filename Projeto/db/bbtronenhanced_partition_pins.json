@@ -288,11 +288,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "wire_RAMOutput[11]",
+					"name" : "wire_RAMOutput[0]",
 					"strict" : false
 				},
 				{
-					"name" : "wire_RAMOutput[12]",
+					"name" : "wire_RAMOutput[2]",
 					"strict" : false
 				},
 				{
@@ -308,15 +308,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "wire_RAMOutput[26]",
-					"strict" : false
-				},
-				{
 					"name" : "wire_RAMOutput[27]",
 					"strict" : false
 				},
 				{
 					"name" : "wire_RAMOutput[28]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_RAMOutput[29]",
 					"strict" : false
 				},
 				{
@@ -452,10 +452,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "wire_data1[0]",
-					"strict" : false
-				},
-				{
 					"name" : "wire_data1[1]",
 					"strict" : false
 				},
@@ -468,115 +464,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "wire_data1[4]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[5]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[6]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[7]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[8]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[9]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[10]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[11]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[12]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[13]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[14]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[15]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[16]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[17]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[18]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[19]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[20]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[21]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[22]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[23]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[24]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[25]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[26]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[27]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[28]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[29]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[30]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_data1[31]",
+					"name" : "wire_out_aluscr[0]",
 					"strict" : false
 				},
 				{
@@ -584,119 +472,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "wire_out_aluscr[3]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[4]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[5]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[6]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[7]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[8]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[9]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[10]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[11]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[12]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[13]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[14]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[15]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[16]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[17]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[18]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[19]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[20]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[21]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[22]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[23]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[24]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[25]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[26]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[27]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[28]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[29]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[30]",
-					"strict" : false
-				},
-				{
-					"name" : "wire_out_aluscr[31]",
+					"name" : "wire_out_aluscr[2]",
 					"strict" : false
 				},
 				{
@@ -705,6 +481,10 @@
 				},
 				{
 					"name" : "wire_cu_aluOp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "wire_cu_aluOp[2]",
 					"strict" : false
 				},
 				{

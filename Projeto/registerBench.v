@@ -17,8 +17,8 @@ module registerBench (readAddy1, readAddy2, writeAddy, writeData, data1, data2, 
       regBench[writeAddy] = writeData;
 	end
 	 regBench[0] = 32'b0;
-	 regBench[1] = -5;
-	 regBench[2] = -6;
+	 regBench[1] = 12;
+	 regBench[2] = 6;
   end
 
   assign data1 = (regBench[readAddy1]);

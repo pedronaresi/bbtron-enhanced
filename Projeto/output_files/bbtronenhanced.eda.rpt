@@ -1,5 +1,5 @@
 EDA Netlist Writer report for bbtronenhanced
-Fri Jun 23 12:05:56 2017
+Tue Jun 27 02:09:45 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Jun 23 12:05:56 2017 ;
+; EDA Netlist Writer Status ; Successful - Tue Jun 27 02:09:45 2017 ;
 ; Revision Name             ; bbtronenhanced                        ;
 ; Top-level Entity Name     ; bbtronenhancedCPU                     ;
 ; Family                    ; Cyclone IV E                          ;
@@ -95,13 +95,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Fri Jun 23 12:05:55 2017
+    Info: Processing started: Tue Jun 27 02:09:44 2017
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim/ bbtronenhanced -c bbtronenhanced
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file bbtronenhanced.vo in folder "e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 511 megabytes
-    Info: Processing ended: Fri Jun 23 12:05:56 2017
+    Info: Peak virtual memory: 512 megabytes
+    Info: Processing ended: Tue Jun 27 02:09:45 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

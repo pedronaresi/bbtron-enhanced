@@ -2,40 +2,76 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -4.321
+TNS   : -23.850
+
 Type  : Slow 1200mV 85C Model Setup 'clock'
-Slack : -3.642
-TNS   : -116.123
+Slack : -2.112
+TNS   : -30.419
+
+Type  : Slow 1200mV 85C Model Hold 'programCounter:inst_programCounter|outAddy[0]'
+Slack : 0.109
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clock'
-Slack : 0.343
+Slack : 0.525
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -51.000
+TNS   : -19.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'programCounter:inst_programCounter|outAddy[0]'
+Slack : 0.392
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -3.924
+TNS   : -21.497
 
 Type  : Slow 1200mV 0C Model Setup 'clock'
-Slack : -3.093
-TNS   : -97.889
+Slack : -1.797
+TNS   : -25.628
+
+Type  : Slow 1200mV 0C Model Hold 'programCounter:inst_programCounter|outAddy[0]'
+Slack : 0.099
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clock'
-Slack : 0.298
+Slack : 0.442
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -51.000
+TNS   : -19.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'programCounter:inst_programCounter|outAddy[0]'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -2.427
+TNS   : -13.039
 
 Type  : Fast 1200mV 0C Model Setup 'clock'
-Slack : -1.609
-TNS   : -44.628
+Slack : -0.783
+TNS   : -10.949
+
+Type  : Fast 1200mV 0C Model Hold 'programCounter:inst_programCounter|outAddy[0]'
+Slack : 0.062
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clock'
-Slack : 0.179
+Slack : 0.165
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -54.388
+TNS   : -19.658
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'programCounter:inst_programCounter|outAddy[0]'
+Slack : 0.402
+TNS   : 0.000
 
 ------------------------------------------------------------
