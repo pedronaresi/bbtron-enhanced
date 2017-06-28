@@ -10,12 +10,10 @@ module programCounter (inAddy, outAddy, hlt, clock, reset);
   end
 
   always @ (posedge clock) begin
-    if(reset)begin
-		outAddy = 0;
+    if(hlt)begin
     end //Não faz nada.
-    else if(hlt) begin
-		 //Não faz nada
-		 end 
+    else if(reset)
+      outAddy = 0;
     else
       outAddy = novo;
   end
