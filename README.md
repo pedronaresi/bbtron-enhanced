@@ -9,5 +9,3 @@ All steps of construction are detailed (in Portuguese) on this [report](relatori
 
 # Contributors:
 - [Pedro Naresi](https://github.com/pedronaresi)
-
-# How to Run:
