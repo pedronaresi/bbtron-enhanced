@@ -5,6 +5,8 @@ The project was developed using the Intel® Quartus® Prime Software and tested 
 
 All steps of construction are detailed (in Portuguese) on this [report](relatorio-lab-aoc.pdf).
 
+The architecture datapath can be found [here](datapath_bbtron_v3.png).
+
 *Read this in other languages: [English](README.md), [Portuguese](README.pt-BR.md).*
 
 # Contributors:
