@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sun Jun 24 13:28:03 2018
+Fitter Status : Successful - Mon Jun 25 18:38:29 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : bbtronenhanced
 Top-level Entity Name : bbtronenhancedCPU
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 3,261 / 114,480 ( 3 % )
-    Total combinational functions : 3,226 / 114,480 ( 3 % )
-    Dedicated logic registers : 259 / 114,480 ( < 1 % )
-Total registers : 259
+Total logic elements : 3,311 / 114,480 ( 3 % )
+    Total combinational functions : 3,265 / 114,480 ( 3 % )
+    Dedicated logic registers : 287 / 114,480 ( < 1 % )
+Total registers : 287
 Total pins : 41 / 529 ( 8 % )
 Total virtual pins : 0
 Total memory bits : 992 / 3,981,312 ( < 1 % )

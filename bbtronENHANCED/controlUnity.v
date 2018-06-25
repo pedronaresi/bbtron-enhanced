@@ -1,5 +1,6 @@
-module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_inSignal, cu_aluScr, cu_writeEnable, cu_readEnable, cu_Branch, cu_aluOp, cu_hlt, cu_reset, cu_showDisplay);
+module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_inSignal, cu_aluScr, cu_writeEnable, cu_readEnable, cu_Branch, cu_aluOp, cu_hlt, cu_reset, cu_showDisplay, enterFlag);
   input [5:0] opcode;
+  input enterFlag;
   output reg cu_writeReg, cu_regDest, cu_memtoReg, cu_inSignal, cu_aluScr, cu_writeEnable, cu_readEnable, cu_Branch, cu_hlt, cu_reset, cu_showDisplay;
   output reg [4:0] cu_aluOp;
   output reg [1:0] cu_Jump;
@@ -353,7 +354,10 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
     cu_readEnable = 1'b0;
     cu_Branch = 1'b0;
     cu_aluOp = 5'b00001;
-    cu_hlt = 1'b0;
+	 if (enterFlag)
+			cu_hlt = 1'b1;
+		else
+			cu_hlt = 1'b0;
     cu_reset = 1'b0;
 	 cu_showDisplay = 1'b0;
     end
@@ -369,7 +373,10 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
     cu_readEnable = 1'b0;
     cu_Branch = 1'b0;
     cu_aluOp = 5'b00000;
-    cu_hlt = 1'b0;
+	 if (enterFlag)
+			cu_hlt = 1'b1;
+		else
+			cu_hlt = 1'b0;
     cu_reset = 1'b0;
 	 cu_showDisplay = 1'b1;
     end

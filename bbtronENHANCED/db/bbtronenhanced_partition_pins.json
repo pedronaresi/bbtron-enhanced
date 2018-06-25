@@ -160,7 +160,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "clock",
+					"name" : "enterButton",
 					"strict" : false
 				}
 			]

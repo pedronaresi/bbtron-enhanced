@@ -1,6 +1,6 @@
-module bbtronenhancedCPU (clock, auto_clock, switches, wire_out1, wire_out2, wire_out3, wire_negative, reset);
+module bbtronenhancedCPU (enterButton, auto_clock, switches, wire_out1, wire_out2, wire_out3, wire_negative, reset);
   //Entradas: Clock e Switches
-  input clock;
+  input enterButton;
   input [15:0] switches;
   input auto_clock;
   input reset;
@@ -74,14 +74,20 @@ module bbtronenhancedCPU (clock, auto_clock, switches, wire_out1, wire_out2, wir
 
   //Wires para "PC Source MUX".
   wire [31:0] wire_out_pcsrc;
+  
+  //Wires para "Enter button"
+  wire wire_enterFlag;
+  
+  //Wires para "Timer"
+  wire wire_clock;
 
   //Instancia dos módulos.
 
   //Program Counter_OK_VERIFICAR SE ESTA CORRETO
-  programCounter inst_programCounter(.inAddy(wire_out_jump [15:0]), .outAddy(wire_outAddy [15:0]), .hlt(wire_cu_hlt), .clock(wire_DB_Out), .reset(wire_cu_reset));
+  programCounter inst_programCounter(.inAddy(wire_out_jump [15:0]), .outAddy(wire_outAddy [15:0]), .hlt(wire_cu_hlt), .clock(auto_clock), .reset(wire_cu_reset));
 
   //Instruction Memory_OK_TESTAR SE ESTA CORRETO
-  instructionMemory inst_instructionMemory(.addy(wire_outAddy [15:0]), .clock(wire_DB_Out), .RAMOuput(wire_RAMOutput [31:0]));
+  instructionMemory inst_instructionMemory(.addy(wire_outAddy [15:0]), .clock(auto_clock), .RAMOuput(wire_RAMOutput [31:0]));
 
   //Signal Extender R_OK
   signExtenderR inst_signExtenderR(.inputA(wire_out_insignal [15:0]), .extenderOutputA(wire_extenderOutputA [31:0]));
@@ -90,13 +96,13 @@ module bbtronenhancedCPU (clock, auto_clock, switches, wire_out1, wire_out2, wir
   signExtenderJ inst_signExtenderJ(.inputB(wire_RAMOutput [25:0]), .extenderOutputB(wire_extenderOutputB [31:0]));
 
   //Register Bench_OK
-  registerBench inst_registerBench(.readAddy1(wire_RAMOutput [25:21]), .readAddy2(wire_RAMOutput [20:16]), .writeAddy(wire_out_regdest [4:0]), .writeData(wire_out_memtoreg [31:0]), .data1(wire_data1 [31:0]), .data2(wire_data2 [31:0]), .data3(wire_data3 [31:0]), .clock(wire_DB_Out), .cu_writeReg(wire_cu_writeReg), .cu_Jump(wire_cu_Jump[1:0]), .pC(wire_outAddy [15:0]));
+  registerBench inst_registerBench(.readAddy1(wire_RAMOutput [25:21]), .readAddy2(wire_RAMOutput [20:16]), .writeAddy(wire_out_regdest [4:0]), .writeData(wire_out_memtoreg [31:0]), .data1(wire_data1 [31:0]), .data2(wire_data2 [31:0]), .data3(wire_data3 [31:0]), .clock(auto_clock), .cu_writeReg(wire_cu_writeReg), .cu_Jump(wire_cu_Jump[1:0]), .pC(wire_outAddy [15:0]));
 
   //Control Unity_OK
-  controlUnity inst_controlUnity(.opcode(wire_RAMOutput [31:26]), .cu_writeReg(wire_cu_writeReg), .cu_regDest(wire_cu_regDest), .cu_memtoReg(wire_cu_memtoReg), .cu_Jump(wire_cu_Jump[1:0]), .cu_inSignal(wire_cu_inSignal), .cu_aluScr(wire_cu_aluScr), .cu_writeEnable(wire_cu_writeEnable), .cu_readEnable(wire_cu_readEnable), .cu_Branch(wire_cu_Branch), .cu_aluOp(wire_cu_aluOp[4:0]), .cu_hlt(wire_cu_hlt), .cu_reset(wire_cu_reset), .cu_showDisplay(wire_cu_show_Display));
+  controlUnity inst_controlUnity(.opcode(wire_RAMOutput [31:26]), .cu_writeReg(wire_cu_writeReg), .cu_regDest(wire_cu_regDest), .cu_memtoReg(wire_cu_memtoReg), .cu_Jump(wire_cu_Jump[1:0]), .cu_inSignal(wire_cu_inSignal), .cu_aluScr(wire_cu_aluScr), .cu_writeEnable(wire_cu_writeEnable), .cu_readEnable(wire_cu_readEnable), .cu_Branch(wire_cu_Branch), .cu_aluOp(wire_cu_aluOp[4:0]), .cu_hlt(wire_cu_hlt), .cu_reset(wire_cu_reset), .cu_showDisplay(wire_cu_show_Display), .enterFlag(wire_enterFlag));
 
   //Data Memory_OK
-  dataMemory inst_dataMemory(.memoryAddy(wire_aluOut [31:0]), .writeData(wire_data2 [31:0]), .cu_writeEnable(wire_cu_writeEnable), .clock(wire_DB_Out), .dataRAMOutput(wire_dataRAMOutput [31:0]), .cu_readEnable(wire_cu_readEnable));
+  dataMemory inst_dataMemory(.memoryAddy(wire_aluOut [31:0]), .writeData(wire_data2 [31:0]), .cu_writeEnable(wire_cu_writeEnable), .clock(auto_clock), .dataRAMOutput(wire_dataRAMOutput [31:0]), .cu_readEnable(wire_cu_readEnable));
 
   //ALU_FALTA NEGATIVE
   ALU inst_ALU(.data1(wire_data1 [31:0]), .data2(wire_out_aluscr [31:0]), .cu_aluOp(wire_cu_aluOp [4:0]), .zero(wire_zero), .shamt(wire_RAMOutput [10:6]), .aluOut(wire_aluOut [31:0]));
@@ -105,7 +111,13 @@ module bbtronenhancedCPU (clock, auto_clock, switches, wire_out1, wire_out2, wir
   outModule inst_outModule(.in(wire_aluOut [31:0]), .out1(wire_out1 [6:0]), .out2(wire_out2 [6:0]), .out3(wire_out3 [6:0]), .negative(wire_negative), .cu_showDisplay(wire_cu_show_Display));
 
   //Debouncer
-  deBouncer inst_deBouncer(.clk(auto_clock), .n_reset(1), .button_in(~clock), .DB_out(wire_DB_Out));
+  deBouncer inst_deBouncer(.clk(auto_clock), .n_reset(1), .button_in(~enterButton), .DB_out(wire_DB_Out));
+  
+  //Enter Button
+  enterButton inst_enterButton(.clock(wire_clock), .DB_Out(wire_DB_Out), .enterFlag(wire_enterFlag));
+  
+  //Timer
+  timer inst_timer(.autoClock(auto_clock), .clock(wire_clock));
   
   //MUXs
   //Register Destination MUX_OK

@@ -1,6 +1,6 @@
 |bbtronenhancedCPU
-clock => _.IN1
-auto_clock => auto_clock.IN1
+enterButton => _.IN1
+auto_clock => auto_clock.IN6
 switches[0] => switches[0].IN1
 switches[1] => switches[1].IN1
 switches[2] => switches[2].IN1
@@ -17,28 +17,28 @@ switches[12] => switches[12].IN1
 switches[13] => switches[13].IN1
 switches[14] => switches[14].IN1
 switches[15] => switches[15].IN1
-wire_out1[0] << outModule:inst_outModule.out1
-wire_out1[1] << outModule:inst_outModule.out1
-wire_out1[2] << outModule:inst_outModule.out1
-wire_out1[3] << outModule:inst_outModule.out1
-wire_out1[4] << outModule:inst_outModule.out1
-wire_out1[5] << outModule:inst_outModule.out1
-wire_out1[6] << outModule:inst_outModule.out1
-wire_out2[0] << outModule:inst_outModule.out2
-wire_out2[1] << outModule:inst_outModule.out2
-wire_out2[2] << outModule:inst_outModule.out2
-wire_out2[3] << outModule:inst_outModule.out2
-wire_out2[4] << outModule:inst_outModule.out2
-wire_out2[5] << outModule:inst_outModule.out2
-wire_out2[6] << outModule:inst_outModule.out2
-wire_out3[0] << outModule:inst_outModule.out3
-wire_out3[1] << outModule:inst_outModule.out3
-wire_out3[2] << outModule:inst_outModule.out3
-wire_out3[3] << outModule:inst_outModule.out3
-wire_out3[4] << outModule:inst_outModule.out3
-wire_out3[5] << outModule:inst_outModule.out3
-wire_out3[6] << outModule:inst_outModule.out3
-wire_negative << outModule:inst_outModule.negative
+wire_out1[0] <= outModule:inst_outModule.out1
+wire_out1[1] <= outModule:inst_outModule.out1
+wire_out1[2] <= outModule:inst_outModule.out1
+wire_out1[3] <= outModule:inst_outModule.out1
+wire_out1[4] <= outModule:inst_outModule.out1
+wire_out1[5] <= outModule:inst_outModule.out1
+wire_out1[6] <= outModule:inst_outModule.out1
+wire_out2[0] <= outModule:inst_outModule.out2
+wire_out2[1] <= outModule:inst_outModule.out2
+wire_out2[2] <= outModule:inst_outModule.out2
+wire_out2[3] <= outModule:inst_outModule.out2
+wire_out2[4] <= outModule:inst_outModule.out2
+wire_out2[5] <= outModule:inst_outModule.out2
+wire_out2[6] <= outModule:inst_outModule.out2
+wire_out3[0] <= outModule:inst_outModule.out3
+wire_out3[1] <= outModule:inst_outModule.out3
+wire_out3[2] <= outModule:inst_outModule.out3
+wire_out3[3] <= outModule:inst_outModule.out3
+wire_out3[4] <= outModule:inst_outModule.out3
+wire_out3[5] <= outModule:inst_outModule.out3
+wire_out3[6] <= outModule:inst_outModule.out3
+wire_negative <= outModule:inst_outModule.negative
 reset => ~NO_FANOUT~
 
 
@@ -4149,6 +4149,8 @@ cu_aluOp[4] <= cu_aluOp[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
 cu_hlt <= cu_hlt$latch.DB_MAX_OUTPUT_PORT_TYPE
 cu_reset <= cu_reset$latch.DB_MAX_OUTPUT_PORT_TYPE
 cu_showDisplay <= cu_showDisplay$latch.DB_MAX_OUTPUT_PORT_TYPE
+enterFlag => Selector4.IN8
+enterFlag => Selector4.IN9
 
 
 |bbtronenhancedCPU|dataMemory:inst_dataMemory
@@ -5725,6 +5727,45 @@ n_reset => q_reg.OUTPUTSELECT
 n_reset => q_reg.OUTPUTSELECT
 button_in => DFF1.DATAA
 DB_out <= DB_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bbtronenhancedCPU|enterButton:inst_enterButton
+clock => state.CLK
+clock => enterFlag~reg0.CLK
+DB_Out => state.OUTPUTSELECT
+DB_Out => enterFlag.DATAB
+DB_Out => state.OUTPUTSELECT
+enterFlag <= enterFlag~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bbtronenhancedCPU|timer:inst_timer
+autoClock => clock~reg0.CLK
+autoClock => cont[0].CLK
+autoClock => cont[1].CLK
+autoClock => cont[2].CLK
+autoClock => cont[3].CLK
+autoClock => cont[4].CLK
+autoClock => cont[5].CLK
+autoClock => cont[6].CLK
+autoClock => cont[7].CLK
+autoClock => cont[8].CLK
+autoClock => cont[9].CLK
+autoClock => cont[10].CLK
+autoClock => cont[11].CLK
+autoClock => cont[12].CLK
+autoClock => cont[13].CLK
+autoClock => cont[14].CLK
+autoClock => cont[15].CLK
+autoClock => cont[16].CLK
+autoClock => cont[17].CLK
+autoClock => cont[18].CLK
+autoClock => cont[19].CLK
+autoClock => cont[20].CLK
+autoClock => cont[21].CLK
+autoClock => cont[22].CLK
+autoClock => cont[23].CLK
+autoClock => cont[24].CLK
+clock <= clock~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bbtronenhancedCPU|muxRegDest:inst_muxRegDest

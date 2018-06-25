@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bbtronenhanced
-Sun Jun 24 13:26:33 2018
+Mon Jun 25 18:37:17 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -39,6 +39,7 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
  31. Post-Synthesis Netlist Statistics for Top Partition
  32. Elapsed Time Per Partition
  33. Analysis & Synthesis Messages
+ 34. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -64,15 +65,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jun 24 13:26:33 2018       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jun 25 18:37:16 2018       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; bbtronenhanced                              ;
 ; Top-level Entity Name              ; bbtronenhancedCPU                           ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 3,392                                       ;
-;     Total combinational functions  ; 3,226                                       ;
-;     Dedicated logic registers      ; 259                                         ;
-; Total registers                    ; 259                                         ;
+; Total logic elements               ; 3,431                                       ;
+;     Total combinational functions  ; 3,265                                       ;
+;     Dedicated logic registers      ; 287                                         ;
+; Total registers                    ; 287                                         ;
 ; Total pins                         ; 41                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 992                                         ;
@@ -211,6 +212,8 @@ refer to the applicable agreement for further details.
 ; display.v                        ; yes             ; User Verilog HDL File        ; d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/display.v                  ;         ;
 ; binToBCD.v                       ; yes             ; User Verilog HDL File        ; d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/binToBCD.v                 ;         ;
 ; deBouncer.v                      ; yes             ; User Verilog HDL File        ; d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/deBouncer.v                ;         ;
+; enterButton.v                    ; yes             ; User Verilog HDL File        ; d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/enterButton.v              ;         ;
+; timer.v                          ; yes             ; User Verilog HDL File        ; d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/timer.v                    ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                 ; d:/programas/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf           ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                 ; d:/programas/intelfpga_lite/18.0/quartus/libraries/megafunctions/stratix_ram_block.inc    ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                 ; d:/programas/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.inc              ;         ;
@@ -239,74 +242,77 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                   ;
-+---------------------------------------------+---------------------------------+
-; Resource                                    ; Usage                           ;
-+---------------------------------------------+---------------------------------+
-; Estimated Total logic elements              ; 3,392                           ;
-;                                             ;                                 ;
-; Total combinational functions               ; 3226                            ;
-; Logic element usage by number of LUT inputs ;                                 ;
-;     -- 4 input functions                    ; 1794                            ;
-;     -- 3 input functions                    ; 1283                            ;
-;     -- <=2 input functions                  ; 149                             ;
-;                                             ;                                 ;
-; Logic elements by mode                      ;                                 ;
-;     -- normal mode                          ; 2035                            ;
-;     -- arithmetic mode                      ; 1191                            ;
-;                                             ;                                 ;
-; Total registers                             ; 259                             ;
-;     -- Dedicated logic registers            ; 259                             ;
-;     -- I/O registers                        ; 0                               ;
-;                                             ;                                 ;
-; I/O pins                                    ; 41                              ;
-; Total memory bits                           ; 992                             ;
-;                                             ;                                 ;
-; Embedded Multiplier 9-bit elements          ; 6                               ;
-;                                             ;                                 ;
-; Maximum fan-out node                        ; deBouncer:inst_deBouncer|DB_out ;
-; Maximum fan-out                             ; 278                             ;
-; Total fan-out                               ; 12528                           ;
-; Average fan-out                             ; 3.48                            ;
-+---------------------------------------------+---------------------------------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 3,431            ;
+;                                             ;                  ;
+; Total combinational functions               ; 3265             ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 1802             ;
+;     -- 3 input functions                    ; 1283             ;
+;     -- <=2 input functions                  ; 180              ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 2050             ;
+;     -- arithmetic mode                      ; 1215             ;
+;                                             ;                  ;
+; Total registers                             ; 287              ;
+;     -- Dedicated logic registers            ; 287              ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 41               ;
+; Total memory bits                           ; 992              ;
+;                                             ;                  ;
+; Embedded Multiplier 9-bit elements          ; 6                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; auto_clock~input ;
+; Maximum fan-out                             ; 317              ;
+; Total fan-out                               ; 12676            ;
+; Average fan-out                             ; 3.45             ;
++---------------------------------------------+------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                             ;
-+-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                             ; Entity Name         ; Library Name ;
-+-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |bbtronenhancedCPU                            ; 3226 (0)            ; 259 (0)                   ; 992         ; 6            ; 0       ; 3         ; 41   ; 0            ; |bbtronenhancedCPU                                                                                                              ; bbtronenhancedCPU   ; work         ;
-;    |ALU:inst_ALU|                             ; 2676 (454)          ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU                                                                                                 ; ALU                 ; work         ;
-;       |lpm_divide:Div0|                       ; 1109 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_hkm:auto_generated|      ; 1109 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Div0|lpm_divide_hkm:auto_generated                                                   ; lpm_divide_hkm      ; work         ;
-;             |sign_div_unsign_9nh:divider|     ; 1109 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Div0|lpm_divide_hkm:auto_generated|sign_div_unsign_9nh:divider                       ; sign_div_unsign_9nh ; work         ;
-;                |alt_u_div_6af:divider|        ; 1109 (1109)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Div0|lpm_divide_hkm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider ; alt_u_div_6af       ; work         ;
-;       |lpm_divide:Mod0|                       ; 1085 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_kcm:auto_generated|      ; 1085 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Mod0|lpm_divide_kcm:auto_generated                                                   ; lpm_divide_kcm      ; work         ;
-;             |sign_div_unsign_9nh:divider|     ; 1085 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Mod0|lpm_divide_kcm:auto_generated|sign_div_unsign_9nh:divider                       ; sign_div_unsign_9nh ; work         ;
-;                |alt_u_div_6af:divider|        ; 1085 (1085)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Mod0|lpm_divide_kcm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider ; alt_u_div_6af       ; work         ;
-;       |lpm_mult:Mult0|                        ; 28 (0)              ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_mult:Mult0                                                                                  ; lpm_mult            ; work         ;
-;          |mult_7dt:auto_generated|            ; 28 (28)             ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_mult:Mult0|mult_7dt:auto_generated                                                          ; mult_7dt            ; work         ;
-;    |andmux:inst_andmux|                       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|andmux:inst_andmux                                                                                           ; andmux              ; work         ;
-;    |controlUnity:inst_controlUnity|           ; 26 (26)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|controlUnity:inst_controlUnity                                                                               ; controlUnity        ; work         ;
-;    |dataMemory:inst_dataMemory|               ; 10 (10)             ; 48 (48)                   ; 992         ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|dataMemory:inst_dataMemory                                                                                   ; dataMemory          ; work         ;
-;       |altsyncram:RAM_rtl_0|                  ; 0 (0)               ; 0 (0)                     ; 992         ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|dataMemory:inst_dataMemory|altsyncram:RAM_rtl_0                                                              ; altsyncram          ; work         ;
-;          |altsyncram_kcc1:auto_generated|     ; 0 (0)               ; 0 (0)                     ; 992         ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|dataMemory:inst_dataMemory|altsyncram:RAM_rtl_0|altsyncram_kcc1:auto_generated                               ; altsyncram_kcc1     ; work         ;
-;    |deBouncer:inst_deBouncer|                 ; 14 (14)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|deBouncer:inst_deBouncer                                                                                     ; deBouncer           ; work         ;
-;    |instructionMemory:inst_instructionMemory| ; 28 (28)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|instructionMemory:inst_instructionMemory                                                                     ; instructionMemory   ; work         ;
-;    |muxALUScr:inst_muxALUScr|                 ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|muxALUScr:inst_muxALUScr                                                                                     ; muxALUScr           ; work         ;
-;    |muxMemtoReg:inst_muxMemtoReg|             ; 64 (64)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|muxMemtoReg:inst_muxMemtoReg                                                                                 ; muxMemtoReg         ; work         ;
-;    |muxPCScr:inst_muxPCScr|                   ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|muxPCScr:inst_muxPCScr                                                                                       ; muxPCScr            ; work         ;
-;    |outModule:inst_outModule|                 ; 85 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|outModule:inst_outModule                                                                                     ; outModule           ; work         ;
-;       |binToBCD:comb_3|                       ; 50 (50)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|outModule:inst_outModule|binToBCD:comb_3                                                                     ; binToBCD            ; work         ;
-;       |display:d1|                            ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|outModule:inst_outModule|display:d1                                                                          ; display             ; work         ;
-;       |display:d2|                            ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|outModule:inst_outModule|display:d2                                                                          ; display             ; work         ;
-;       |display:d3|                            ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|outModule:inst_outModule|display:d3                                                                          ; display             ; work         ;
-;    |programCounter:inst_programCounter|       ; 14 (14)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|programCounter:inst_programCounter                                                                           ; programCounter      ; work         ;
-;    |registerBench:inst_registerBench|         ; 265 (265)           ; 192 (192)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|registerBench:inst_registerBench                                                                             ; registerBench       ; work         ;
-+-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                   ;
++-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                   ; Entity Name         ; Library Name ;
++-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |bbtronenhancedCPU                            ; 3265 (0)            ; 287 (0)                   ; 992         ; 6            ; 0       ; 3         ; 41   ; 0            ; |bbtronenhancedCPU                                                                                                                                    ; bbtronenhancedCPU   ; work         ;
+;    |ALU:inst_ALU|                             ; 2663 (441)          ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU                                                                                                                       ; ALU                 ; work         ;
+;       |lpm_divide:Div0|                       ; 1109 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Div0                                                                                                       ; lpm_divide          ; work         ;
+;          |lpm_divide_hkm:auto_generated|      ; 1109 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Div0|lpm_divide_hkm:auto_generated                                                                         ; lpm_divide_hkm      ; work         ;
+;             |sign_div_unsign_9nh:divider|     ; 1109 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Div0|lpm_divide_hkm:auto_generated|sign_div_unsign_9nh:divider                                             ; sign_div_unsign_9nh ; work         ;
+;                |alt_u_div_6af:divider|        ; 1109 (1109)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Div0|lpm_divide_hkm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider                       ; alt_u_div_6af       ; work         ;
+;       |lpm_divide:Mod0|                       ; 1085 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Mod0                                                                                                       ; lpm_divide          ; work         ;
+;          |lpm_divide_kcm:auto_generated|      ; 1085 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Mod0|lpm_divide_kcm:auto_generated                                                                         ; lpm_divide_kcm      ; work         ;
+;             |sign_div_unsign_9nh:divider|     ; 1085 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Mod0|lpm_divide_kcm:auto_generated|sign_div_unsign_9nh:divider                                             ; sign_div_unsign_9nh ; work         ;
+;                |alt_u_div_6af:divider|        ; 1085 (1084)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Mod0|lpm_divide_kcm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider                       ; alt_u_div_6af       ; work         ;
+;                   |add_sub_8pc:add_sub_1|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_divide:Mod0|lpm_divide_kcm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider|add_sub_8pc:add_sub_1 ; add_sub_8pc         ; work         ;
+;       |lpm_mult:Mult0|                        ; 28 (0)              ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_mult:Mult0                                                                                                        ; lpm_mult            ; work         ;
+;          |mult_7dt:auto_generated|            ; 28 (28)             ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |bbtronenhancedCPU|ALU:inst_ALU|lpm_mult:Mult0|mult_7dt:auto_generated                                                                                ; mult_7dt            ; work         ;
+;    |andmux:inst_andmux|                       ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|andmux:inst_andmux                                                                                                                 ; andmux              ; work         ;
+;    |controlUnity:inst_controlUnity|           ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|controlUnity:inst_controlUnity                                                                                                     ; controlUnity        ; work         ;
+;    |dataMemory:inst_dataMemory|               ; 10 (10)             ; 48 (48)                   ; 992         ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|dataMemory:inst_dataMemory                                                                                                         ; dataMemory          ; work         ;
+;       |altsyncram:RAM_rtl_0|                  ; 0 (0)               ; 0 (0)                     ; 992         ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|dataMemory:inst_dataMemory|altsyncram:RAM_rtl_0                                                                                    ; altsyncram          ; work         ;
+;          |altsyncram_kcc1:auto_generated|     ; 0 (0)               ; 0 (0)                     ; 992         ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|dataMemory:inst_dataMemory|altsyncram:RAM_rtl_0|altsyncram_kcc1:auto_generated                                                     ; altsyncram_kcc1     ; work         ;
+;    |deBouncer:inst_deBouncer|                 ; 14 (14)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|deBouncer:inst_deBouncer                                                                                                           ; deBouncer           ; work         ;
+;    |enterButton:inst_enterButton|             ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|enterButton:inst_enterButton                                                                                                       ; enterButton         ; work         ;
+;    |instructionMemory:inst_instructionMemory| ; 28 (28)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|instructionMemory:inst_instructionMemory                                                                                           ; instructionMemory   ; work         ;
+;    |muxALUScr:inst_muxALUScr|                 ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|muxALUScr:inst_muxALUScr                                                                                                           ; muxALUScr           ; work         ;
+;    |muxMemtoReg:inst_muxMemtoReg|             ; 64 (64)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|muxMemtoReg:inst_muxMemtoReg                                                                                                       ; muxMemtoReg         ; work         ;
+;    |muxPCScr:inst_muxPCScr|                   ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|muxPCScr:inst_muxPCScr                                                                                                             ; muxPCScr            ; work         ;
+;    |outModule:inst_outModule|                 ; 83 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|outModule:inst_outModule                                                                                                           ; outModule           ; work         ;
+;       |binToBCD:comb_3|                       ; 48 (48)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|outModule:inst_outModule|binToBCD:comb_3                                                                                           ; binToBCD            ; work         ;
+;       |display:d1|                            ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|outModule:inst_outModule|display:d1                                                                                                ; display             ; work         ;
+;       |display:d2|                            ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|outModule:inst_outModule|display:d2                                                                                                ; display             ; work         ;
+;       |display:d3|                            ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|outModule:inst_outModule|display:d3                                                                                                ; display             ; work         ;
+;    |programCounter:inst_programCounter|       ; 14 (14)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|programCounter:inst_programCounter                                                                                                 ; programCounter      ; work         ;
+;    |registerBench:inst_registerBench|         ; 266 (266)           ; 192 (192)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|registerBench:inst_registerBench                                                                                                   ; registerBench       ; work         ;
+;    |timer:inst_timer|                         ; 40 (40)             ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bbtronenhancedCPU|timer:inst_timer                                                                                                                   ; timer               ; work         ;
++-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1842,7 +1848,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 259   ;
+; Total registers                              ; 287   ;
 ; Number of registers using Synchronous Clear  ; 11    ;
 ; Number of registers using Synchronous Load   ; 11    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -1908,22 +1914,22 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
-; 3:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |bbtronenhancedCPU|registerBench:inst_registerBench|regBench[31][15] ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; Yes        ; |bbtronenhancedCPU|programCounter:inst_programCounter|outAddy[11]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |bbtronenhancedCPU|muxMemtoReg:inst_muxMemtoReg|out[26]              ;
-; 32:1               ; 15 bits   ; 315 LEs       ; 75 LEs               ; 240 LEs                ; No         ; |bbtronenhancedCPU|registerBench:inst_registerBench|Mux10            ;
-; 32:1               ; 17 bits   ; 357 LEs       ; 102 LEs              ; 255 LEs                ; No         ; |bbtronenhancedCPU|registerBench:inst_registerBench|Mux16            ;
-; 32:1               ; 15 bits   ; 315 LEs       ; 75 LEs               ; 240 LEs                ; No         ; |bbtronenhancedCPU|registerBench:inst_registerBench|Mux38            ;
-; 32:1               ; 17 bits   ; 357 LEs       ; 102 LEs              ; 255 LEs                ; No         ; |bbtronenhancedCPU|registerBench:inst_registerBench|Mux48            ;
+; 3:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |bbtronenhancedCPU|registerBench:inst_registerBench|regBench[31][10] ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; Yes        ; |bbtronenhancedCPU|programCounter:inst_programCounter|outAddy[5]     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |bbtronenhancedCPU|muxMemtoReg:inst_muxMemtoReg|out[0]               ;
+; 32:1               ; 15 bits   ; 315 LEs       ; 75 LEs               ; 240 LEs                ; No         ; |bbtronenhancedCPU|registerBench:inst_registerBench|Mux8             ;
+; 32:1               ; 17 bits   ; 357 LEs       ; 102 LEs              ; 255 LEs                ; No         ; |bbtronenhancedCPU|registerBench:inst_registerBench|Mux21            ;
+; 32:1               ; 15 bits   ; 315 LEs       ; 75 LEs               ; 240 LEs                ; No         ; |bbtronenhancedCPU|registerBench:inst_registerBench|Mux41            ;
+; 32:1               ; 17 bits   ; 357 LEs       ; 102 LEs              ; 255 LEs                ; No         ; |bbtronenhancedCPU|registerBench:inst_registerBench|Mux51            ;
 ; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |bbtronenhancedCPU|ALU:inst_ALU|Add0                                 ;
 ; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; No         ; |bbtronenhancedCPU|ALU:inst_ALU|Add0                                 ;
-; 19:1               ; 8 bits    ; 96 LEs        ; 72 LEs               ; 24 LEs                 ; No         ; |bbtronenhancedCPU|ALU:inst_ALU|Mux22                                ;
-; 19:1               ; 8 bits    ; 96 LEs        ; 72 LEs               ; 24 LEs                 ; No         ; |bbtronenhancedCPU|ALU:inst_ALU|Mux14                                ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 40 LEs               ; 12 LEs                 ; No         ; |bbtronenhancedCPU|ALU:inst_ALU|Mux26                                ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 40 LEs               ; 12 LEs                 ; No         ; |bbtronenhancedCPU|ALU:inst_ALU|Mux4                                 ;
+; 19:1               ; 8 bits    ; 96 LEs        ; 72 LEs               ; 24 LEs                 ; No         ; |bbtronenhancedCPU|ALU:inst_ALU|Mux19                                ;
+; 19:1               ; 8 bits    ; 96 LEs        ; 72 LEs               ; 24 LEs                 ; No         ; |bbtronenhancedCPU|ALU:inst_ALU|Mux8                                 ;
+; 20:1               ; 4 bits    ; 52 LEs        ; 40 LEs               ; 12 LEs                 ; No         ; |bbtronenhancedCPU|ALU:inst_ALU|Mux25                                ;
+; 20:1               ; 4 bits    ; 52 LEs        ; 40 LEs               ; 12 LEs                 ; No         ; |bbtronenhancedCPU|ALU:inst_ALU|Mux5                                 ;
 ; 21:1               ; 2 bits    ; 28 LEs        ; 20 LEs               ; 8 LEs                  ; No         ; |bbtronenhancedCPU|ALU:inst_ALU|Mux28                                ;
-; 21:1               ; 2 bits    ; 28 LEs        ; 20 LEs               ; 8 LEs                  ; No         ; |bbtronenhancedCPU|ALU:inst_ALU|Mux3                                 ;
-; 22:1               ; 2 bits    ; 28 LEs        ; 20 LEs               ; 8 LEs                  ; No         ; |bbtronenhancedCPU|ALU:inst_ALU|Mux30                                ;
+; 21:1               ; 2 bits    ; 28 LEs        ; 20 LEs               ; 8 LEs                  ; No         ; |bbtronenhancedCPU|ALU:inst_ALU|Mux2                                 ;
+; 22:1               ; 2 bits    ; 28 LEs        ; 20 LEs               ; 8 LEs                  ; No         ; |bbtronenhancedCPU|ALU:inst_ALU|Mux31                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
 
 
@@ -2201,26 +2207,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 41                          ;
-; cycloneiii_ff         ; 259                         ;
+; cycloneiii_ff         ; 287                         ;
 ;     ENA               ; 197                         ;
 ;     SCLR SLD          ; 11                          ;
-;     plain             ; 51                          ;
-; cycloneiii_lcell_comb ; 3229                        ;
-;     arith             ; 1191                        ;
-;         2 data inputs ; 21                          ;
+;     plain             ; 79                          ;
+; cycloneiii_lcell_comb ; 3268                        ;
+;     arith             ; 1215                        ;
+;         2 data inputs ; 45                          ;
 ;         3 data inputs ; 1170                        ;
-;     normal            ; 2038                        ;
+;     normal            ; 2053                        ;
 ;         0 data inputs ; 60                          ;
-;         1 data inputs ; 7                           ;
-;         2 data inputs ; 64                          ;
+;         1 data inputs ; 9                           ;
+;         2 data inputs ; 69                          ;
 ;         3 data inputs ; 113                         ;
-;         4 data inputs ; 1794                        ;
+;         4 data inputs ; 1802                        ;
 ; cycloneiii_mac_mult   ; 3                           ;
 ; cycloneiii_mac_out    ; 3                           ;
 ; cycloneiii_ram_block  ; 32                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 142.70                      ;
-; Average LUT depth     ; 116.82                      ;
+; Average LUT depth     ; 115.01                      ;
 +-----------------------+-----------------------------+
 
 
@@ -2229,7 +2235,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:09     ;
+; Top            ; 00:00:13     ;
 +----------------+--------------+
 
 
@@ -2239,7 +2245,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sun Jun 24 13:26:11 2018
+    Info: Processing started: Mon Jun 25 18:36:46 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bbtronenhanced -c bbtronenhanced
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -2283,11 +2289,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file bintobc
     Info (12023): Found entity 1: binToBCD File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/binToBCD.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file debouncer.v
     Info (12023): Found entity 1: deBouncer File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/deBouncer.v Line: 28
-Warning (10236): Verilog HDL Implicit Net warning at bbtronenhancedCPU.v(96): created implicit net for "wire_cu_show_Display" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 96
+Info (12021): Found 1 design units, including 1 entities, in source file enterbutton.v
+    Info (12023): Found entity 1: enterButton File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/enterButton.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file timer.v
+    Info (12023): Found entity 1: timer File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/timer.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at bbtronenhancedCPU.v(102): created implicit net for "wire_cu_show_Display" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 102
 Critical Warning (10846): Verilog HDL Instantiation warning at outModule.v(10): instance has no name File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/outModule.v Line: 10
 Info (12127): Elaborating entity "bbtronenhancedCPU" for the top level hierarchy
-Info (12128): Elaborating entity "programCounter" for hierarchy "programCounter:inst_programCounter" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 81
-Info (12128): Elaborating entity "instructionMemory" for hierarchy "instructionMemory:inst_instructionMemory" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 84
+Info (12128): Elaborating entity "programCounter" for hierarchy "programCounter:inst_programCounter" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 87
+Info (12128): Elaborating entity "instructionMemory" for hierarchy "instructionMemory:inst_instructionMemory" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 90
 Warning (10036): Verilog HDL or VHDL warning at instructionMemory.v(8): object "firstClock" assigned a value but never read File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/instructionMemory.v Line: 8
 Warning (10030): Net "instructionRAM[30..20]" at instructionMemory.v(10) has no driver or initial value, using a default initial value '0' File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/instructionMemory.v Line: 10
 Info (10041): Inferred latch for "instructionRAM[0][0]" at instructionMemory.v(13) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/instructionMemory.v Line: 13
@@ -2930,45 +2940,47 @@ Info (10041): Inferred latch for "instructionRAM[19][28]" at instructionMemory.v
 Info (10041): Inferred latch for "instructionRAM[19][29]" at instructionMemory.v(13) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/instructionMemory.v Line: 13
 Info (10041): Inferred latch for "instructionRAM[19][30]" at instructionMemory.v(13) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/instructionMemory.v Line: 13
 Info (10041): Inferred latch for "instructionRAM[19][31]" at instructionMemory.v(13) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/instructionMemory.v Line: 13
-Info (12128): Elaborating entity "signExtenderR" for hierarchy "signExtenderR:inst_signExtenderR" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 87
-Info (12128): Elaborating entity "signExtenderJ" for hierarchy "signExtenderJ:inst_signExtenderJ" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 90
-Info (12128): Elaborating entity "registerBench" for hierarchy "registerBench:inst_registerBench" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 93
+Info (12128): Elaborating entity "signExtenderR" for hierarchy "signExtenderR:inst_signExtenderR" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 93
+Info (12128): Elaborating entity "signExtenderJ" for hierarchy "signExtenderJ:inst_signExtenderJ" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 96
+Info (12128): Elaborating entity "registerBench" for hierarchy "registerBench:inst_registerBench" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 99
 Warning (10230): Verilog HDL assignment warning at registerBench.v(21): truncated value with size 33 to match size of target (32) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/registerBench.v Line: 21
-Info (12128): Elaborating entity "controlUnity" for hierarchy "controlUnity:inst_controlUnity" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 96
-Warning (10270): Verilog HDL Case Statement warning at controlUnity.v(8): incomplete case statement has no default case item File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
-Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(7): inferring latch(es) for variable "cu_writeReg", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(7): inferring latch(es) for variable "cu_regDest", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(7): inferring latch(es) for variable "cu_memtoReg", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(7): inferring latch(es) for variable "cu_Jump", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(7): inferring latch(es) for variable "cu_inSignal", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(7): inferring latch(es) for variable "cu_aluScr", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(7): inferring latch(es) for variable "cu_writeEnable", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(7): inferring latch(es) for variable "cu_readEnable", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(7): inferring latch(es) for variable "cu_Branch", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(7): inferring latch(es) for variable "cu_aluOp", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(7): inferring latch(es) for variable "cu_hlt", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(7): inferring latch(es) for variable "cu_reset", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(7): inferring latch(es) for variable "cu_showDisplay", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_showDisplay" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_reset" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_hlt" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_aluOp[0]" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_aluOp[1]" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_aluOp[2]" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_aluOp[3]" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_aluOp[4]" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_Branch" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_readEnable" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_writeEnable" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_aluScr" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_inSignal" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_Jump[0]" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_Jump[1]" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_memtoReg" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_regDest" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (10041): Inferred latch for "cu_writeReg" at controlUnity.v(7) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Info (12128): Elaborating entity "dataMemory" for hierarchy "dataMemory:inst_dataMemory" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 99
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst_ALU" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 102
+Info (12128): Elaborating entity "controlUnity" for hierarchy "controlUnity:inst_controlUnity" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 102
+Warning (10235): Verilog HDL Always Construct warning at controlUnity.v(357): variable "enterFlag" is read inside the Always Construct but isn't in the Always Construct's Event Control File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 357
+Warning (10235): Verilog HDL Always Construct warning at controlUnity.v(376): variable "enterFlag" is read inside the Always Construct but isn't in the Always Construct's Event Control File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 376
+Warning (10270): Verilog HDL Case Statement warning at controlUnity.v(9): incomplete case statement has no default case item File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 9
+Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(8): inferring latch(es) for variable "cu_writeReg", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(8): inferring latch(es) for variable "cu_regDest", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(8): inferring latch(es) for variable "cu_memtoReg", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(8): inferring latch(es) for variable "cu_Jump", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(8): inferring latch(es) for variable "cu_inSignal", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(8): inferring latch(es) for variable "cu_aluScr", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(8): inferring latch(es) for variable "cu_writeEnable", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(8): inferring latch(es) for variable "cu_readEnable", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(8): inferring latch(es) for variable "cu_Branch", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(8): inferring latch(es) for variable "cu_aluOp", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(8): inferring latch(es) for variable "cu_hlt", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(8): inferring latch(es) for variable "cu_reset", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (10240): Verilog HDL Always Construct warning at controlUnity.v(8): inferring latch(es) for variable "cu_showDisplay", which holds its previous value in one or more paths through the always construct File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_showDisplay" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_reset" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_hlt" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_aluOp[0]" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_aluOp[1]" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_aluOp[2]" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_aluOp[3]" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_aluOp[4]" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_Branch" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_readEnable" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_writeEnable" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_aluScr" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_inSignal" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_Jump[0]" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_Jump[1]" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_memtoReg" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_regDest" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (10041): Inferred latch for "cu_writeReg" at controlUnity.v(8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Info (12128): Elaborating entity "dataMemory" for hierarchy "dataMemory:inst_dataMemory" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 105
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst_ALU" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 108
 Warning (10235): Verilog HDL Always Construct warning at ALU.v(21): variable "shamt" is read inside the Always Construct but isn't in the Always Construct's Event Control File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/ALU.v Line: 21
 Warning (10235): Verilog HDL Always Construct warning at ALU.v(22): variable "shamt" is read inside the Always Construct but isn't in the Always Construct's Event Control File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/ALU.v Line: 22
 Warning (10270): Verilog HDL Case Statement warning at ALU.v(11): incomplete case statement has no default case item File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/ALU.v Line: 11
@@ -3005,58 +3017,61 @@ Info (10041): Inferred latch for "aluOut[28]" at ALU.v(10) File: d:/Users/Pedro/
 Info (10041): Inferred latch for "aluOut[29]" at ALU.v(10) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/ALU.v Line: 10
 Info (10041): Inferred latch for "aluOut[30]" at ALU.v(10) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/ALU.v Line: 10
 Info (10041): Inferred latch for "aluOut[31]" at ALU.v(10) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/ALU.v Line: 10
-Info (12128): Elaborating entity "outModule" for hierarchy "outModule:inst_outModule" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 105
+Info (12128): Elaborating entity "outModule" for hierarchy "outModule:inst_outModule" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 111
 Warning (10230): Verilog HDL assignment warning at outModule.v(12): truncated value with size 32 to match size of target (1) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/outModule.v Line: 12
 Info (12128): Elaborating entity "binToBCD" for hierarchy "outModule:inst_outModule|binToBCD:comb_3" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/outModule.v Line: 10
 Warning (10230): Verilog HDL assignment warning at binToBCD.v(15): truncated value with size 32 to match size of target (8) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/binToBCD.v Line: 15
 Warning (10034): Output port "negative" at binToBCD.v(7) has no driver File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/binToBCD.v Line: 7
 Info (12128): Elaborating entity "display" for hierarchy "outModule:inst_outModule|display:d1" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/outModule.v Line: 14
-Info (12128): Elaborating entity "deBouncer" for hierarchy "deBouncer:inst_deBouncer" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 108
+Info (12128): Elaborating entity "deBouncer" for hierarchy "deBouncer:inst_deBouncer" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 114
 Warning (10230): Verilog HDL assignment warning at deBouncer.v(54): truncated value with size 32 to match size of target (11) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/deBouncer.v Line: 54
-Info (12128): Elaborating entity "muxRegDest" for hierarchy "muxRegDest:inst_muxRegDest" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 112
-Info (12128): Elaborating entity "muxMemtoReg" for hierarchy "muxMemtoReg:inst_muxMemtoReg" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 115
-Info (12128): Elaborating entity "muxJump" for hierarchy "muxJump:inst_muxJump" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 118
-Info (12128): Elaborating entity "muxInSignal" for hierarchy "muxInSignal:inst_muxInSignal" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 121
-Info (12128): Elaborating entity "muxALUScr" for hierarchy "muxALUScr:inst_muxALUScr" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 124
-Info (12128): Elaborating entity "andmux" for hierarchy "andmux:inst_andmux" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 127
-Info (12128): Elaborating entity "muxPCScr" for hierarchy "muxPCScr:inst_muxPCScr" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 130
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_showDisplay" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_reset" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_hlt" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_Branch" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_readEnable" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_writeEnable" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluScr" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_inSignal" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_Jump[0]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_Jump[1]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_memtoReg" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_regDest" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_writeReg" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[0]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[1]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[2]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[3]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[4]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
+Info (12128): Elaborating entity "enterButton" for hierarchy "enterButton:inst_enterButton" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 117
+Info (12128): Elaborating entity "timer" for hierarchy "timer:inst_timer" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 120
+Warning (10230): Verilog HDL assignment warning at timer.v(14): truncated value with size 32 to match size of target (25) File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/timer.v Line: 14
+Info (12128): Elaborating entity "muxRegDest" for hierarchy "muxRegDest:inst_muxRegDest" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 124
+Info (12128): Elaborating entity "muxMemtoReg" for hierarchy "muxMemtoReg:inst_muxMemtoReg" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 127
+Info (12128): Elaborating entity "muxJump" for hierarchy "muxJump:inst_muxJump" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 130
+Info (12128): Elaborating entity "muxInSignal" for hierarchy "muxInSignal:inst_muxInSignal" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 133
+Info (12128): Elaborating entity "muxALUScr" for hierarchy "muxALUScr:inst_muxALUScr" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 136
+Info (12128): Elaborating entity "andmux" for hierarchy "andmux:inst_andmux" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 139
+Info (12128): Elaborating entity "muxPCScr" for hierarchy "muxPCScr:inst_muxPCScr" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 142
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_showDisplay" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_reset" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_hlt" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_Branch" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_readEnable" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_writeEnable" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluScr" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_inSignal" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_Jump[0]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_Jump[1]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_memtoReg" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_regDest" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_writeReg" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[0]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[1]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[2]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[3]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[4]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
 Warning (276020): Inferred RAM node "dataMemory:inst_dataMemory|RAM_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_showDisplay" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_writeEnable" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_readEnable" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_inSignal" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluScr" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[2]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[0]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[1]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[4]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[3]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_memtoReg" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_regDest" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_writeReg" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_Jump[0]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_Jump[1]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 7
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_Branch" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_reset" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
-Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_hlt" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 3
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_showDisplay" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_writeEnable" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_readEnable" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_inSignal" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluScr" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[2]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[0]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[1]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[4]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_aluOp[3]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_memtoReg" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_regDest" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_writeReg" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_Jump[0]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_Jump[1]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 8
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_Branch" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_reset" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
+Warning (14026): LATCH primitive "controlUnity:inst_controlUnity|cu_hlt" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/controlUnity.v Line: 4
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "dataMemory:inst_dataMemory|RAM_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -3237,20 +3252,27 @@ Warning (14026): LATCH primitive "ALU:inst_ALU|aluOut[30]" is permanently enable
 Warning (14026): LATCH primitive "ALU:inst_ALU|aluOut[31]" is permanently enabled File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/ALU.v Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 28 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/output_files/bbtronenhanced.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "reset" File: d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/bbtronenhancedCPU.v Line: 6
-Info (21057): Implemented 3546 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3585 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 22 output pins
-    Info (21061): Implemented 3467 logic cells
+    Info (21061): Implemented 3506 logic cells
     Info (21064): Implemented 32 RAM segments
     Info (21062): Implemented 6 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 168 warnings
-    Info: Peak virtual memory: 718 megabytes
-    Info: Processing ended: Sun Jun 24 13:26:33 2018
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:38
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 171 warnings
+    Info: Peak virtual memory: 736 megabytes
+    Info: Processing ended: Mon Jun 25 18:37:17 2018
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:40
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/output_files/bbtronenhanced.map.smsg.
 
 
