@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Jun 24 13:26:33 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : bbtronenhanced
+Top-level Entity Name : bbtronenhancedCPU
+Family : Cyclone IV E
+Total logic elements : 3,392
+    Total combinational functions : 3,226
+    Dedicated logic registers : 259
+Total registers : 259
+Total pins : 41
+Total virtual pins : 0
+Total memory bits : 992
+Embedded Multiplier 9-bit elements : 6
+Total PLLs : 0

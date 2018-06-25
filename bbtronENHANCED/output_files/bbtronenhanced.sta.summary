@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'deBouncer:inst_deBouncer|DB_out'
+Slack : -135.902
+TNS   : -28355.912
+
+Type  : Slow 1200mV 85C Model Setup 'auto_clock'
+Slack : -2.305
+TNS   : -17.328
+
+Type  : Slow 1200mV 85C Model Hold 'deBouncer:inst_deBouncer|DB_out'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'auto_clock'
+Slack : 0.449
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'auto_clock'
+Slack : -3.000
+TNS   : -20.990
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'deBouncer:inst_deBouncer|DB_out'
+Slack : -2.693
+TNS   : -325.597
+
+Type  : Slow 1200mV 0C Model Setup 'deBouncer:inst_deBouncer|DB_out'
+Slack : -122.782
+TNS   : -25608.679
+
+Type  : Slow 1200mV 0C Model Setup 'auto_clock'
+Slack : -2.046
+TNS   : -14.598
+
+Type  : Slow 1200mV 0C Model Hold 'deBouncer:inst_deBouncer|DB_out'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'auto_clock'
+Slack : 0.406
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'auto_clock'
+Slack : -3.000
+TNS   : -20.990
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'deBouncer:inst_deBouncer|DB_out'
+Slack : -2.649
+TNS   : -325.421
+
+Type  : Fast 1200mV 0C Model Setup 'deBouncer:inst_deBouncer|DB_out'
+Slack : -66.807
+TNS   : -13944.940
+
+Type  : Fast 1200mV 0C Model Setup 'auto_clock'
+Slack : -0.718
+TNS   : -1.876
+
+Type  : Fast 1200mV 0C Model Hold 'deBouncer:inst_deBouncer|DB_out'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'auto_clock'
+Slack : 0.203
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'auto_clock'
+Slack : -3.000
+TNS   : -17.879
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'deBouncer:inst_deBouncer|DB_out'
+Slack : -1.000
+TNS   : -249.000
+
+------------------------------------------------------------
