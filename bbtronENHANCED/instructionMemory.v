@@ -7,12 +7,24 @@ module instructionMemory (addy, clock, RAMOuput, reset);
 
   integer firstClock = 0;
 
-  reg [31:0] instructionRAM [30:0];
+  reg [31:0] instructionRAM [14:0];
 
   always @ (addy or reset) begin
     if (reset) begin
       // Algoritmmo a ser executado pelo processador
 		
+		instructionRAM[0] = 32'b010111_00000000000000000000000001; 	// Jump to Main
+		instructionRAM[1] = 32'b001011_00011_00011_0000000000000000; 	// addi
+		instructionRAM[2] = 32'b011101_00000000000000000000000000; 	// halt
+		instructionRAM[3] = 32'b010101_00000_10101_0000000000000000; 	// in
+		instructionRAM[4] = 32'b010000_00011_10101_0000000000000000; 	// sw
+		instructionRAM[5] = 32'b001111_00011_01011_0000000000000000; 	// lw
+		instructionRAM[6] = 32'b100000_01011_00111_0000000000000000; 	// mov
+		instructionRAM[7] = 32'b010110_00111_000000000000000000000; 	// out
+		instructionRAM[8] = 32'b011101_00000000000000000000000000; 	// halt
+
+		
+		/*
 		instructionRAM[0] = 32'b010110_00000_000000000000000000000; //out R[0]
 		instructionRAM[1] = 32'b010101_00000_00010_0000000000000000; //in R[2] <- X
 		instructionRAM[2] = 32'b010110_00010_000000000000000000000;	//out R[2]
@@ -36,7 +48,7 @@ module instructionMemory (addy, clock, RAMOuput, reset);
 		instructionRAM[17] = 32'b000001_00100_00010_00101_00000000000; //sub R[5] = R[4] - R[2]
 		instructionRAM[18] = 32'b010110_00101_000000000000000000000; //out R[5]
 		instructionRAM[19] = 32'b011000_00101_000000000000000000000; // hlt
-		
+		*/
     end
   end
 

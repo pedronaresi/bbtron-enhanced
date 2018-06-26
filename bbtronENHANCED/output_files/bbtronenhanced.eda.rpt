@@ -1,6 +1,6 @@
 EDA Netlist Writer report for bbtronenhanced
-Tue Jun 27 20:42:32 2017
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Tue Jun 26 19:57:06 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
 ---------------------
@@ -17,7 +17,7 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -25,19 +25,18 @@ functions, and any output files from any of the foregoing
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Jun 27 20:42:32 2017 ;
+; EDA Netlist Writer Status ; Successful - Tue Jun 26 19:57:06 2018 ;
 ; Revision Name             ; bbtronenhanced                        ;
 ; Top-level Entity Name     ; bbtronenhancedCPU                     ;
 ; Family                    ; Cyclone IV E                          ;
@@ -66,13 +65,13 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                  ;
-+---------------------------------------------------------------------------------------------+
-; Generated Files                                                                             ;
-+---------------------------------------------------------------------------------------------+
-; e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim//bbtronenhanced.vo ;
-+---------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                        ;
++---------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                   ;
++---------------------------------------------------------------------------------------------------+
+; d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/simulation/qsim//bbtronenhanced.vo ;
++---------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,8 +79,8 @@ agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and its AMPP partner logic 
     Info: functions, and any output files from any of the foregoing 
@@ -89,20 +88,19 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: associated documentation or information are expressly subject 
     Info: to the terms and conditions of the Intel Program License 
     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
-    Info: the Intel MegaCore Function License Agreement, or other 
-    Info: applicable license agreement, including, without limitation, 
-    Info: that your use is for the sole purpose of programming logic 
-    Info: devices manufactured by Intel and sold by Intel or its 
-    Info: authorized distributors.  Please refer to the applicable 
-    Info: agreement for further details.
-    Info: Processing started: Tue Jun 27 20:42:30 2017
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim/ bbtronenhanced -c bbtronenhanced
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Tue Jun 26 19:57:05 2018
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/simulation/qsim/ bbtronenhanced -c bbtronenhanced
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file bbtronenhanced.vo in folder "e:/Users/Sergio/Documents/GitHub/bbtron_enhanced/Projeto/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file bbtronenhanced.vo in folder "d:/Users/Pedro/Documents/GitHub/bbtron-enhanced/bbtronENHANCED/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 527 megabytes
-    Info: Processing ended: Tue Jun 27 20:42:32 2017
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 572 megabytes
+    Info: Processing ended: Tue Jun 26 19:57:06 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

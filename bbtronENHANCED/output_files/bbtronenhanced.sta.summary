@@ -2,76 +2,76 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'auto_clock'
-Slack : -139.028
-TNS   : -28633.320
-
 Type  : Slow 1200mV 85C Model Setup 'timer:inst_timer|clock'
-Slack : -0.327
-TNS   : -0.652
+Slack : -12.333
+TNS   : -1493.494
 
-Type  : Slow 1200mV 85C Model Hold 'auto_clock'
-Slack : 0.388
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'auto_clock'
+Slack : -3.476
+TNS   : -58.515
 
 Type  : Slow 1200mV 85C Model Hold 'timer:inst_timer|clock'
-Slack : 0.432
+Slack : 0.390
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'auto_clock'
+Slack : 0.405
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'auto_clock'
 Slack : -3.000
-TNS   : -379.997
+TNS   : -54.400
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'timer:inst_timer|clock'
-Slack : -1.285
-TNS   : -2.570
-
-Type  : Slow 1200mV 0C Model Setup 'auto_clock'
-Slack : -125.611
-TNS   : -25843.650
+Slack : -2.693
+TNS   : -257.492
 
 Type  : Slow 1200mV 0C Model Setup 'timer:inst_timer|clock'
-Slack : -0.235
-TNS   : -0.447
+Slack : -11.230
+TNS   : -1366.623
 
-Type  : Slow 1200mV 0C Model Hold 'auto_clock'
+Type  : Slow 1200mV 0C Model Setup 'auto_clock'
+Slack : -3.150
+TNS   : -49.000
+
+Type  : Slow 1200mV 0C Model Hold 'timer:inst_timer|clock'
 Slack : 0.341
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'timer:inst_timer|clock'
-Slack : 0.397
+Type  : Slow 1200mV 0C Model Hold 'auto_clock'
+Slack : 0.357
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'auto_clock'
 Slack : -3.000
-TNS   : -379.821
+TNS   : -54.400
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'timer:inst_timer|clock'
-Slack : -1.285
-TNS   : -2.570
-
-Type  : Fast 1200mV 0C Model Setup 'auto_clock'
-Slack : -68.756
-TNS   : -14115.865
+Slack : -2.649
+TNS   : -257.316
 
 Type  : Fast 1200mV 0C Model Setup 'timer:inst_timer|clock'
-Slack : 0.252
+Slack : -5.601
+TNS   : -651.126
+
+Type  : Fast 1200mV 0C Model Setup 'auto_clock'
+Slack : -1.215
+TNS   : -10.520
+
+Type  : Fast 1200mV 0C Model Hold 'timer:inst_timer|clock'
+Slack : 0.172
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'auto_clock'
-Slack : 0.171
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'timer:inst_timer|clock'
-Slack : 0.190
+Slack : 0.184
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'auto_clock'
 Slack : -3.000
-TNS   : -315.291
+TNS   : -45.402
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'timer:inst_timer|clock'
 Slack : -1.000
-TNS   : -2.000
+TNS   : -196.000
 
 ------------------------------------------------------------

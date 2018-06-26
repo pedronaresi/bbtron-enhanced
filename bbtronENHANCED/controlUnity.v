@@ -531,6 +531,22 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
     cu_memtoReg = 1'b0;
     cu_Jump = 2'b00;
     cu_inSignal = 1'b0;
+    cu_aluScr = 1'b0;
+    cu_writeEnable = 1'b0;
+    cu_readEnable = 1'b0;
+    cu_Branch = 1'b0;
+    cu_aluOp = 5'b00000;
+    cu_hlt = 1'b0;
+    cu_reset = 1'b0;
+	 cu_showDisplay = 1'b0;
+    end
+	 
+	 6'b100001: begin //Load Adress
+    cu_writeReg = 1'b1;
+    cu_regDest = 1'b1;
+    cu_memtoReg = 1'b0;
+    cu_Jump = 2'b00;
+    cu_inSignal = 1'b0;
     cu_aluScr = 1'b1;
     cu_writeEnable = 1'b0;
     cu_readEnable = 1'b0;
