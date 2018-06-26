@@ -1,12 +1,12 @@
 module ALU (data1, data2, cu_aluOp, zero, /*negative,*/ shamt, aluOut);
-  input [31:0] data1, data2; //Dados para operação da ALU
+  input [31:0] data1; //Dados para operação da ALU
+  input signed [31:0] data2;
   input [4:0] cu_aluOp;  //Sinal vindo da unidade de controle para seleção da operação
   input [4:0] shamt; //Sinal para descolocamento.
-
   output reg [31:0] aluOut; //Dados de saída da ALU;
   //output negative;
   output zero;
-
+  
   always @ (cu_aluOp or data1 or data2) begin
     case(cu_aluOp[4:0])
       5'b00000: aluOut = data1; //Mantem
