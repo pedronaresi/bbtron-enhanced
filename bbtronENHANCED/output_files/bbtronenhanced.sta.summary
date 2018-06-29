@@ -2,21 +2,41 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'controlUnity:inst_controlUnity|cu_aluOp[2]'
+Slack : -169.602
+TNS   : -5362.122
+
 Type  : Slow 1200mV 85C Model Setup 'timer:inst_timer|clock'
-Slack : -12.333
-TNS   : -1493.494
+Slack : -18.168
+TNS   : -16392.712
+
+Type  : Slow 1200mV 85C Model Setup 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -8.150
+TNS   : -106.397
 
 Type  : Slow 1200mV 85C Model Setup 'auto_clock'
-Slack : -3.476
-TNS   : -58.515
+Slack : -2.386
+TNS   : -59.912
+
+Type  : Slow 1200mV 85C Model Hold 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -11.907
+TNS   : -168.379
+
+Type  : Slow 1200mV 85C Model Hold 'controlUnity:inst_controlUnity|cu_aluOp[2]'
+Slack : -5.609
+TNS   : -126.937
 
 Type  : Slow 1200mV 85C Model Hold 'timer:inst_timer|clock'
-Slack : 0.390
-TNS   : 0.000
+Slack : -3.864
+TNS   : -100.961
 
 Type  : Slow 1200mV 85C Model Hold 'auto_clock'
-Slack : 0.405
-TNS   : 0.000
+Slack : -2.822
+TNS   : -2.822
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -6.450
+TNS   : -664.930
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'auto_clock'
 Slack : -3.000
@@ -24,23 +44,47 @@ TNS   : -54.400
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'timer:inst_timer|clock'
 Slack : -2.693
-TNS   : -257.492
+TNS   : -1370.302
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlUnity:inst_controlUnity|cu_aluOp[2]'
+Slack : 0.423
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'controlUnity:inst_controlUnity|cu_aluOp[2]'
+Slack : -153.657
+TNS   : -4854.926
 
 Type  : Slow 1200mV 0C Model Setup 'timer:inst_timer|clock'
-Slack : -11.230
-TNS   : -1366.623
+Slack : -16.956
+TNS   : -15119.856
+
+Type  : Slow 1200mV 0C Model Setup 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -7.307
+TNS   : -94.815
 
 Type  : Slow 1200mV 0C Model Setup 'auto_clock'
-Slack : -3.150
-TNS   : -49.000
+Slack : -2.064
+TNS   : -50.589
+
+Type  : Slow 1200mV 0C Model Hold 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -10.979
+TNS   : -155.935
+
+Type  : Slow 1200mV 0C Model Hold 'controlUnity:inst_controlUnity|cu_aluOp[2]'
+Slack : -5.013
+TNS   : -112.273
 
 Type  : Slow 1200mV 0C Model Hold 'timer:inst_timer|clock'
-Slack : 0.341
-TNS   : 0.000
+Slack : -3.512
+TNS   : -93.975
 
 Type  : Slow 1200mV 0C Model Hold 'auto_clock'
-Slack : 0.357
-TNS   : 0.000
+Slack : -2.568
+TNS   : -2.568
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -6.087
+TNS   : -596.643
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'auto_clock'
 Slack : -3.000
@@ -48,30 +92,58 @@ TNS   : -54.400
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'timer:inst_timer|clock'
 Slack : -2.649
-TNS   : -257.316
+TNS   : -1370.126
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlUnity:inst_controlUnity|cu_aluOp[2]'
+Slack : 0.407
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'controlUnity:inst_controlUnity|cu_aluOp[2]'
+Slack : -84.463
+TNS   : -2668.678
 
 Type  : Fast 1200mV 0C Model Setup 'timer:inst_timer|clock'
-Slack : -5.601
-TNS   : -651.126
+Slack : -9.134
+TNS   : -7956.580
+
+Type  : Fast 1200mV 0C Model Setup 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -3.901
+TNS   : -49.679
 
 Type  : Fast 1200mV 0C Model Setup 'auto_clock'
-Slack : -1.215
-TNS   : -10.520
+Slack : -0.695
+TNS   : -10.974
+
+Type  : Fast 1200mV 0C Model Hold 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -5.907
+TNS   : -83.371
+
+Type  : Fast 1200mV 0C Model Hold 'controlUnity:inst_controlUnity|cu_aluOp[2]'
+Slack : -3.167
+TNS   : -76.515
 
 Type  : Fast 1200mV 0C Model Hold 'timer:inst_timer|clock'
-Slack : 0.172
-TNS   : 0.000
+Slack : -2.041
+TNS   : -103.885
 
 Type  : Fast 1200mV 0C Model Hold 'auto_clock'
-Slack : 0.184
-TNS   : 0.000
+Slack : -1.528
+TNS   : -1.528
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'programCounter:inst_programCounter|outAddy[0]'
+Slack : -3.516
+TNS   : -282.556
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'auto_clock'
 Slack : -3.000
-TNS   : -45.402
+TNS   : -45.452
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'timer:inst_timer|clock'
 Slack : -1.000
-TNS   : -196.000
+TNS   : -1062.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlUnity:inst_controlUnity|cu_aluOp[2]'
+Slack : 0.326
+TNS   : 0.000
 
 ------------------------------------------------------------

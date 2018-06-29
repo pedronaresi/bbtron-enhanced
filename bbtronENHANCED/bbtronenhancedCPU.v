@@ -84,7 +84,7 @@ module bbtronenhancedCPU (enterButton, auto_clock, switches, wire_out1, wire_out
   //Instancia dos módulos.
 
   //Program Counter_OK_VERIFICAR SE ESTA CORRETO
-  programCounter inst_programCounter(.inAddy(wire_out_jump [15:0]), .outAddy(wire_outAddy [15:0]), .hlt(wire_cu_hlt), .clock(wire_clock), .reset(wire_cu_reset));
+  programCounter inst_programCounter(.inAddy(wire_out_jump [15:0]), .outAddy(wire_outAddy [15:0]), .hlt(wire_cu_hlt), .clock(wire_clock), .reset(reset));
 
   //Instruction Memory_OK_TESTAR SE ESTA CORRETO
   instructionMemory inst_instructionMemory(.addy(wire_outAddy [15:0]), .clock(wire_clock), .RAMOuput(wire_RAMOutput [31:0]));

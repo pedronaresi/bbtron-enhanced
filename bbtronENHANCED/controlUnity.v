@@ -397,7 +397,7 @@ module controlUnity (opcode, cu_writeReg, cu_regDest, cu_memtoReg, cu_Jump, cu_i
 	 cu_showDisplay = 1'b0;
     end
 
-    6'b011000: begin //No Operation
+    6'b011000: begin //No Operation (halt)
     cu_writeReg = 1'bx;
     cu_regDest = 1'bx;
     cu_memtoReg = 1'bx;
