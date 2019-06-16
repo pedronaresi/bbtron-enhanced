@@ -1,3 +1,0 @@
-module bbtron_enhanced (clock, switches, );
-  
-endmodule // bbtron_enhanced
